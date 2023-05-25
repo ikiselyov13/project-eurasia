@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,120 +12,215 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <!--Курсы языков-->
-   <header>
-    <div class="header-content">
-        <div class="header-content__picture">
-            <div class="header-content__picture-logo"></div>
-            <div class="header-content__picture-drop-down"></div>
-        </div>
-        <div class="header-contacts">
-            <div class="header-contacts__navigation">
-                <nav class="header-contacts__menu"></nav>
-                <img src="" alt="" class="header-contacts__search">
+    <header class="container">
+        <div class="header-content ">
+            <div class="header-content__picture">
+                <img src="/img/header/logo.png" alt="Логотип" class="header-content__picture-logo">
+                <div class="header-content__title">
+                    <p class="header-content__title-eur">
+                        <span class="header-content__title-eur-let-e">Е</span>вр<span class="header-content__title-eur-let-a">а</span>зия
+                    </p>
+                    <p class="header-content__title-lang">Языковой центр</p>
+                </div>
+                <div class="header-content__picture-drop-down">
+                    <p class="header-content__picture-drop-down-text">Наши отделения</p>
+                    <div class="header-content__picture-drop-down-text-icon"></div>
+
+                    <!--Выпадающее меню Наши отделения-->
+                    <nav class="header-content__picture-navbar">
+                        <ul class="header-content__picture-navbar-list">
+                            <li class="header-content__picture-navbar-item">
+                                <a href="#" class="header-content__picture-navbar-link">item 1</a>
+                            </li>
+                            <li class="header-content__picture-navbar-item">
+                                <a href="#" class="header-content__picture-navbar-link">item 2</a>
+                            </li>
+                            <li class="header-content__picture-navbar-item">
+                                <a href="#" class="header-content__picture-navbar-link">item 3</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                
             </div>
-            <div class="header-contacts__content">
-                <p class="header-contacts__content-phone"></p>
-                <ul class="header-contacts__content-socials"></ul>
-                <button class="header-contacts__content-btn"></button>
+            <div class="header-contacts">
+                <div class="header-contacts__navigation">
+                    <nav class="header-contacts__menu">
+                        <ul class="header-contacts__menu-list">
+                            <li class="header-contacts__menu-item"><a href="#" class="header-contacts__menu-link">О нас</a></li>
+                            <li class="header-contacts__menu-item"><a href="#" class="header-contacts__menu-link">Преподаватели</a></li>
+                            <li class="header-contacts__menu-item"><a href="#" class="header-contacts__menu-link">Цены</a></li>
+                            <li class="header-contacts__menu-item"><a href="#" class="header-contacts__menu-link">Горящие группы</a></li>
+                            <li class="header-contacts__menu-item"><a href="#" class="header-contacts__menu-link">Контакты</a></li>
+                            <li class="header-contacts__menu-item"><a href="#" class="header-contacts__menu-link">Пройти тест</a></li>
+                        </ul>
+                    </nav>
+                    <img src="/img/header/search.png" alt="Поиск" class="header-contacts__search">
+                </div>
+                <div class="header-contacts__content">
+                    <p class="header-contacts__content-phone">+7 (495) -877-47-01</p>
+                    <ul class="header-contacts__content-socials">
+                        <li class="header-contacts__content-socials-link"><a href="#" class="header-contacts__content-socials-icon"><img src="/img/header/phone-call-icon.png" alt="Call-back"></a></li>
+                        <li class="header-contacts__content-socials-link"><a href="#" class="header-contacts__content-socials-icon"><img src="/img/header/telegram-icon.png" alt="Telegram"></a></li>
+                        <li class="header-contacts__content-socials-link"><a href="#" class="header-contacts__content-socials-icon"><img src="/img/header/whatsapp-icon.png" alt="Whatsapp"></a></li>
+                        <li class="header-contacts__content-socials-link"><a href="#" class="header-contacts__content-socials-icon"><img src="/img/header/viber-icon.png" alt="Viber"></a></li>
+                    </ul>
+                    <button type="button" class="header-contacts__content-btn">
+                        <p class="header-contacts__content-btn-text">Записаться на курсы</p>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="header-nav">
-        <nav class="header-nav__menu"></nav>
-        <div class="header-nav__pagination"></div>
-    </div>
-   </header>
-   <main>
-    <!--Представление-->
-    <section class="preview">
-        <h1 class="visually-hiddden"></h1>
-        <h2 class="visually-hiddden"></h1>
-        <article class="preview__features"></article>
-        <article class="preview__form"></article>
-    </section>
+        <div class="header-nav">
+            <nav class="header-nav__menu">
+                <ul class="header-nav__menu-list">
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">Взрослым</a>
+                        <div class="header-nav__menu-line"></div>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">Детям</a>
+                        <div class="header-nav__menu-line"></div>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">Онлайн</a>
+                        <div class="header-nav__menu-line"></div>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">Экзамены</a>
+                        <div class="header-nav__menu-line"></div>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">Репетиторы</a>
+                        <div class="header-nav__menu-line"></div>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">Разговорный клуб</a>
+                        <div class="header-nav__menu-line"></div>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">За рубежом</a>
+                        <div class="header-nav__menu-line"></div>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">Корпоративное</a>
+                        <div class="header-nav__menu-line"></div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-nav__pagination">
+                <a href="#" class="header-nav__pagination-link">Главная</a>
+                <p class="header-nav__pagination-text">> Курсы китайского языка</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Преимущества-->
+        <section class="advanteges">
+            <h1 class="visually-hidden">Курсы китайского языка</h1>
+            <h2 class="visually-hidden">Преимущества</h2>
+                <article class="advantages__features"></article>
+                <article class="advantages__form"></article>
+        </section>
 
-    <!--Описание-->
-    <section class="desc">
-        <h2 class="visually-hiddden"></h1>
-        <article class="desc__text"></article>
-        <article class="desc__video"></article>
-    </section>
+        <!--Описание-->
+        <section class="desc">
+            <h2 class="visually-hidden">
+                </h1>
+                <article class="desc__text"></article>
+                <article class="desc__video"></article>
+        </section>
 
-    <!--Каталог-->
-    <section class="catalog">
-        <h2 class="visually-hiddden"></h1>
-        <ul class="catalog__list"></ul>
-    </section>
+        <!--Каталог-->
+        <section class="catalog">
+            <h2 class="visually-hidden">
+                </h1>
+                <ul class="catalog__list"></ul>
+        </section>
 
-    <!--Пробный урок-->
-    <section class="trial">
-        <h2 class="visually-hiddden"></h1>
-            <article class="trial__picture"></article>
-            <article class="trial__form"></article>
-    </section>
+        <!--Пробный урок-->
+        <section class="trial">
+            <h2 class="visually-hidden">
+                </h1>
+                <article class="trial__picture"></article>
+                <article class="trial__form"></article>
+        </section>
 
-    <!--Расписание и цены-->
-    <section class="shedule">
-        <h2 class="visually-hiddden"></h1>
-        <ul class="shedule__list"></ul>
-        <a href="#" class="shedule__link"></a>
-    </section>
+        <!--Расписание и цены-->
+        <section class="shedule">
+            <h2 class="visually-hidden">
+                </h1>
+                <ul class="shedule__list"></ul>
+                <a href="#" class="shedule__link"></a>
+        </section>
 
-    <!--Оставить заяваку-->
-    <section class="application">
-        <h2 class="visually-hiddden"></h1>
-        <p class="application__content"></p>
-        <button type="button" class="application__btn"></button>
-    </section>
+        <!--Оставить заяваку-->
+        <section class="application">
+            <h2 class="visually-hidden">
+                </h1>
+                <p class="application__content"></p>
+                <button type="button" class="application__btn"></button>
+        </section>
 
-    <!--Летняя стажировка-->
-    <section class="summer">
-        <h2 class="visually-hiddden"></h1>
-        <p class="summer__content"></p>
-        <button type="button" class="summer__btn"></button>
-    </section>
+        <!--Летняя стажировка-->
+        <section class="summer">
+            <h2 class="visually-hidden">
+                </h1>
+                <p class="summer__content"></p>
+                <button type="button" class="summer__btn"></button>
+        </section>
 
-    <!--Форматы занятий-->
-    <section class="formats">
-        <h2 class="visually-hiddden"></h1>
-        <ul class="formats__list"></ul>
-    </section>
+        <!--Форматы занятий-->
+        <section class="formats">
+            <h2 class="visually-hidden">
+                </h1>
+                <ul class="formats__list"></ul>
+        </section>
 
-    <!--Преподаватели-->
-    <section class="teachers">
-        <h2 class="visually-hiddden"></h1>
-        <ul class="teachers__list"></ul>
-    </section>
+        <!--Преподаватели-->
+        <section class="teachers">
+            <h2 class="visually-hidden">
+                </h1>
+                <ul class="teachers__list"></ul>
+        </section>
 
-    <!--Как проходит обучение-->
-    <section class="learning">
-        <h2 class="visually-hiddden"></h1>
-        <ul class="learning__list"></ul>
-    </section>
+        <!--Как проходит обучение-->
+        <section class="learning">
+            <h2 class="visually-hidden">
+                </h1>
+                <ul class="learning__list"></ul>
+        </section>
 
-    <!--Результат-->
-    <section class="result">
-        <h2 class="visually-hiddden"></h1>
-        <article class="result__content"></article>
-        <ul class="result__list"></ul>
-    </section>
+        <!--Результат-->
+        <section class="result">
+            <h2 class="visually-hidden">
+                </h1>
+                <article class="result__content"></article>
+                <ul class="result__list"></ul>
+        </section>
 
-    <!--Отзывы учеников-->
-    <section class="feedback">
-        <h2 class="visually-hiddden"></h1>
-        <ul class="feedback__list"></ul>
-        <ul class="feedback__pagination"></ul>
-    </section>
+        <!--Отзывы учеников-->
+        <section class="feedback">
+            <h2 class="visually-hidden">
+                </h1>
+                <ul class="feedback__list"></ul>
+                <ul class="feedback__pagination"></ul>
+        </section>
 
-    <!--Видео занятий-->
-    <section class="lessons">
-        <h2 class="visually-hiddden"></h1>
-        <ul class="lessons__control"></ul>
-        <ul class="lessons__list"></ul>
-    </section>
-   </main>
-   <footer></footer> 
+        <!--Видео занятий-->
+        <section class="lessons">
+            <h2 class="visually-hidden">
+                </h1>
+                <ul class="lessons__control"></ul>
+                <ul class="lessons__list"></ul>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+
 </html>

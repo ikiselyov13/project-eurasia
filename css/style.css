@@ -17,8 +17,11 @@ body {
 }
 
 .test-1 {
+    width: 300px;
+    height: 100px;
     background: red;
     border: solid 3px;
+    margin: 0 auto;
 }
 
 .test-2 {
@@ -59,6 +62,11 @@ body {
 
 .container_trial {
     position: relative;
+}
+
+.container_shedule {
+    min-height: 455px;
+    margin: 50px auto;
 }
 
 .input-box {
@@ -111,7 +119,8 @@ button {
 }
 
 .shadow {
-    box-shadow: 4px 4px 20px rgba(21, 78, 132, 0.1);
+    box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
+    
 }
 
 /*Курсы языков*/
@@ -199,7 +208,7 @@ button {
     /*display: block;*/
     display: none;
     position: absolute;
-    box-shadow: 4px 4px 20px rgba(21, 78, 132, 0.1);
+    /*box-shadow: 4px 4px 20px rgba(21, 78, 132, 0.1);*/
     border-radius: 10px;
     background: var(--background-general);
 }
@@ -674,6 +683,11 @@ button {
     border: var(--general-blue);
 }
 
+.trial__sign-up-form-button:hover {
+    background: var(--general-red);
+    border: var(--general-red);
+}
+
 .trial__list {
     position: absolute;
     top: 0px;
@@ -736,4 +750,285 @@ button {
 
 .trial__item-content-text {
     vertical-align: middle;
+}
+
+/*Расписание и цены*/
+
+
+
+.shedule__title {
+    font-weight: 800;
+    font-size: 29px;
+    line-height: 27px;
+}
+
+.shedule__parameters {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 10px 0;
+}
+
+.shedule__parameters-list {
+    width: 625px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shedule__parameters-age {
+    border: 1px solid var(--text-secondary);
+    border-radius: 5px;
+    width: 162px;
+}
+
+.shedule__parameters-age-button {
+    border: none;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    background: var(--background-general);
+    color: var(--text-secondary);
+}
+
+.shedule__parameters-age-button_adults {
+    margin: 0 -5px 0 0;
+    background: var(--general-blue);
+    color: var(--background-general);
+}
+
+.shedule__parameters-age-button_adults:hover {
+    color: var(--text-primary);
+}
+
+.shedule__parameters-age-button_kids:hover {
+    color: var(--text-primary);
+}
+
+.shedule__parameters-age-button_kids:active {
+    background: var(--general-blue);
+    color: var(--background-general);
+}
+
+.shedule__parameters-item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid var(--text-secondary);
+    width: 162px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.shedule__parameters-item:hover .shedule__parameters-navbar {
+    display: block;
+}
+
+.shedule__parameters-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 5px 0 0 5px;
+    border-top: 7px solid var(--text-secondary);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.shedule__parameters-navbar {
+    width: 95%;
+    min-height: 100px;
+    padding: 5px 1px 0 10px;
+    text-align: left;
+    /*display: block;*/
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background: var(--background-general);
+    position: absolute;
+    top: 45px;
+    left: 0px;
+        
+}
+
+.shedule__parameters-navbar-link {
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    color: var(--text-secondary);  
+}
+
+.shedule__parameters-navbar-link:hover {
+    color: var(--text-primary);
+}
+
+.shedule__parameters-preferences-list {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.shedule__parameters-preferences-item {
+    color: var(--text-secondary);
+    margin: 0 20px 0 0;
+}
+
+.shedule__catalog-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shedule__catalog-item {
+    width: 570px;
+    min-height: 180px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shedule__catalog-item-info-box {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+}
+
+.shedule__catalog-item-info-title {
+    line-height: 35px;
+}
+
+.shedule__catalog-item-info-box-addr-map-icon {
+    width: 18px;
+    height: 15px;
+}
+
+.shedule__catalog-item-info-box-addr-map {
+    line-height: 35px;
+}
+
+.shedule__catalog-item-info-box-addr-map-link {
+    color: var(--text-secondary);
+}
+
+.shedule__catalog-item-info-box-addr-map-link:hover {
+    color: var(--text-primary);
+}
+
+.shedule__catalog-item-info-box-addr-teachers-title {
+    color: var(--text-secondary);
+    font-weight: normal;
+    line-height: 35px;
+}
+
+.shedule__catalog-item-info-box-addr-teachers-item {
+    line-height: 20px;
+}
+
+.shedule__catalog-item-info-box-addr-teachers-link {
+    color: var(--general-blue);
+}
+
+.shedule__catalog-item-info-box-addr-teachers-link:hover {
+    color: var(--general-red);
+}
+
+.shedule__catalog-item-info-box-addr-start {
+    font-weight: bolder;
+    color: var(--general-red);
+    margin: 15px 0 0 0;
+}
+
+.shedule__catalog-item-info-box-mini-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.shedule__catalog-item-info-box-mini-days {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 35px;
+    color: var(--text-secondary);
+}
+
+.shedule__catalog-item-info-box-mini-price {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--text-secondary);
+}
+
+.shedule__catalog-item-info-box-mini-price-discount {
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+    margin: 5px 0 0 0;
+    background: var(--general-red);
+    color: var(--background-general);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.shedule__catalog-item-control-item-button {
+    width: 150px;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.shedule__catalog-item-control-item-button_sign-up {
+    background: var(--general-red);
+    border: 1px solid var(--general-red);
+}
+
+.shedule__catalog-item-control-item-button_sign-up:hover {
+    color: var(--general-blue);
+}
+
+.shedule__catalog-item-control-item-button_trial {
+    background: var(--general-blue);
+    border: 1px solid var(--general-blue);
+}
+
+.shedule__catalog-item-control-item-button_trial:hover {
+    color: var(--general-red);
+}
+
+.shedule__catalog-item-control-item-button_call-back {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--background-general);
+    border: 3px solid var(--price);
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.shedule__catalog-item-control-item-button_call-back:hover {
+    
+    background: var(--price);
+    border: 3px solid var(--price);
+    color: var(--background-general);
+}
+
+.shedule__catalog-item-control-item-button-pic {
+ display: inline-block;
+}
+
+.shedule__link {
+    display: block;
+    margin: 50px auto;
+    width: 200px;
 }

@@ -32,7 +32,7 @@
                     <div class="header-content__picture-drop-down-text-icon"></div>
 
                     <!--Выпадающее меню Наши отделения-->
-                    <nav class="header-content__picture-navbar">
+                    <nav class="header-content__picture-navbar shadow">
                         <ul class="header-content__picture-navbar-list">
                             <li class="header-content__picture-navbar-item">
                                 <a href="#" class="header-content__picture-navbar-link">item 1</a>
@@ -622,8 +622,7 @@
                         </label>
                         <label>
                             <span class="visually-hidden">tel</span>
-                            <input type="tel" required placeholder="+7-999-999-99-99"
-                                class="input-box input-box_trial">
+                            <input type="tel" required placeholder="+7-999-999-99-99" class="input-box input-box_trial">
                         </label>
                         <button type="submit" class="trial__sign-up-form-button">
                             Записаться
@@ -676,11 +675,211 @@
         </section>
 
         <!--Расписание и цены-->
-        <section class="shedule">
-            <h2 class="visually-hidden">
+        <section class="shedule container container_shedule">
+            <h2 class="shedule__title">
+                Расписание и цены
+                <img src="/img/shedule/fire-icon.png" alt="fire-icon">
             </h2>
-            <ul class="shedule__list"></ul>
-            <a href="#" class="shedule__link"></a>
+            <article class="shedule__parameters">
+                <h3 class="visually-hidden">Параметры группы</h3>
+                <div class="shedule__parameters-age">
+                    <button type="button" class="shedule__parameters-age-button shedule__parameters-age-button_adults">Взрослым
+                    </button>
+                    <button type="button" class="shedule__parameters-age-button shedule__parameters-age-button_kids">Детям
+                    </button>
+                </div>
+                <ul class="shedule__parameters-list">
+                    <li class="shedule__parameters-item">
+                        <p class="shedule__parameters-item-text">Выберите язык</p>
+                        <div class="shedule__parameters-icon">
+                        </div>
+                        <!--Выпадающее меню Выберите язык-->
+                        <nav class="shedule__parameters-navbar shadow">
+                            <ul class="shedule__parameters-navbar-list">
+                                <li class="shedule__parameters-navbar-item">
+                                    <a href="#" class="shedule__parameters-navbar-link">item 1</a>
+                                </li>
+                                <li class="shedule__parameters-navbar-item">
+                                    <a href="#" class="shedule__parameters-navbar-link">item 2</a>
+                                </li>
+                                <li class="shedule__parameters-navbar-item">
+                                    <a href="#" class="shedule__parameters-navbar-link">item 3</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="shedule__parameters-item">
+                        <p class="shedule__parameters-item-text">Выберите школу</p>
+                        <div class="shedule__parameters-icon">
+                        </div>
+                        <!--Выпадающее меню Выберите язык-->
+                        <nav class="shedule__parameters-navbar shadow">
+                            <ul class="shedule__parameters-navbar-list">
+                                <li class="shedule__parameters-navbar-item">
+                                    <a href="#" class="shedule__parameters-navbar-link">item 1</a>
+                                </li>
+                                <li class="shedule__parameters-navbar-item">
+                                    <a href="#" class="shedule__parameters-navbar-link">item 2</a>
+                                </li>
+                                <li class="shedule__parameters-navbar-item">
+                                    <a href="#" class="shedule__parameters-navbar-link">item 3</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="shedule__parameters-item">
+                        <p class="shedule__parameters-item-text">Ваш уровень</p>
+                        <div class="shedule__parameters-icon">
+                        </div>
+                        <!--Выпадающее меню Выберите язык-->
+                        <nav class="shedule__parameters-navbar shadow">
+                            <ul class="shedule__parameters-navbar-list">
+                                <li class="shedule__parameters-navbar-item">
+                                    <a href="#" class="shedule__parameters-navbar-link">item 1</a>
+                                </li>
+                                <li class="shedule__parameters-navbar-item">
+                                    <a href="#" class="shedule__parameters-navbar-link">item 2</a>
+                                </li>
+                                <li class="shedule__parameters-navbar-item">
+                                    <a href="#" class="shedule__parameters-navbar-link">item 3</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+                <form class="shedule__parameters-preferences">
+                    <ul class="shedule__parameters-preferences-list">
+                        <li class="shedule__parameters-preferences-item">
+                            <div>
+                                <input type="checkbox" id="online" name="online">
+                                <label for="online">Только онлайн-курсы</label>
+                            </div>
+                        </li>
+                        <li class="shedule__parameters-preferences-item">
+                            <div>
+                                <input type="checkbox" id="exams" name="exams">
+                                <label for="exams">ЕГЭ/ОГЭ</label>
+                            </div>
+                        </li>
+                        <li class="shedule__parameters-preferences-item">
+                            <div>
+                                <input type="checkbox" id="groups" name="groups">
+                                <label for="groups">Мини-группы</label>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </article>
+            <article class="shedule__catalog">
+                <h3 class="visually-hidden">Виды занятий</h3>
+                <ul class="shedule__catalog-list">
+                    <li class="shedule__catalog-item shadow">
+                        <div class="shedule__catalog-item-info">
+                            <h4 class="shedule__catalog-item-info-title">EverydayChinese (HSK2)</h4>
+                            <div class="shedule__catalog-item-info-box">
+                                <div class="shedule__catalog-item-info-box-addr">
+                                    <div class="shedule__catalog-item-info-box-addr-map">
+                                        <img src="/img/shedule/map-icon.png" alt="map" class="shedule__catalog-item-info-box-addr-map-icon">
+                                        <a href="#" class="shedule__catalog-item-info-box-addr-map-link">м.Курская</a>
+                                    </div>
+                                    <div class="shedule__catalog-item-info-box-addr-teachers">
+                                        <h5 class="shedule__catalog-item-info-box-addr-teachers-title">Курс ведут:</h5>
+                                        <ul class="shedule__catalog-item-info-box-addr-teachers-list">
+                                            <li class="shedule__catalog-item-info-box-addr-teachers-item">
+                                                <a href="#" class="shedule__catalog-item-info-box-addr-teachers-link">Чень Бо</a>
+                                            </li>
+                                            <li class="shedule__catalog-item-info-box-addr-teachers-item">
+                                                <a href="#" class="shedule__catalog-item-info-box-addr-teachers-link">Дарья</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="shedule__catalog-item-info-box-addr-start">Старт 15.03</p>
+                                </div>
+                                <div class="shedule__catalog-item-info-box-mini">
+                                    <p class="shedule__catalog-item-info-box-mini-title">Мини-группа</p>
+                                    <p class="shedule__catalog-item-info-box-mini-days">Пн-Ср 20:30</p>
+                                    <p class="shedule__catalog-item-info-box-mini-price">от 12900/ от 34 800 ₽
+                                        <span class="shedule__catalog-item-info-box-mini-price-discount">-10%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shedule__catalog-item-control">
+                            <ul class="shedule__catalog-item-control-list">
+                                <li class="shedule__catalog-item-control-item">
+                                    <button type="button" class="shedule__catalog-item-control-item-button shedule__catalog-item-control-item-button_sign-up">Записаться</button>
+                                </li>
+                                <li class="shedule__catalog-item-control-item">
+                                    <button type="button"
+                                        class="shedule__catalog-item-control-item-button shedule__catalog-item-control-item-button_trial">Пробное занятие</button>
+                                </li>
+                                <li class="shedule__catalog-item-control-item">
+                                    <button type="button" class="shedule__catalog-item-control-item-button shedule__catalog-item-control-item-button_call-back">
+                                        <img src="/img/shedule/whatsapp-icon.png" alt="Call-back" class="shedule__catalog-item-control-item-button-pic">
+                                        <p class="shedule__catalog-item-control-item-button-text">Спросить</p>
+                                        
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="shedule__catalog-item shadow">
+                        <div class="shedule__catalog-item-info">
+                            <h4 class="shedule__catalog-item-info-title">EverydayChinese (HSK2)</h4>
+                            <div class="shedule__catalog-item-info-box">
+                                <div class="shedule__catalog-item-info-box-addr">
+                                    <div class="shedule__catalog-item-info-box-addr-map">
+                                        <img src="/img/shedule/map-icon.png" alt="map" class="shedule__catalog-item-info-box-addr-map-icon">
+                                        <a href="#" class="shedule__catalog-item-info-box-addr-map-link">м.Курская</a>
+                                    </div>
+                                    <div class="shedule__catalog-item-info-box-addr-teachers">
+                                        <h5 class="shedule__catalog-item-info-box-addr-teachers-title">Курс ведут:</h5>
+                                        <ul class="shedule__catalog-item-info-box-addr-teachers-list">
+                                            <li class="shedule__catalog-item-info-box-addr-teachers-item">
+                                                <a href="#" class="shedule__catalog-item-info-box-addr-teachers-link">Чень Бо</a>
+                                            </li>
+                                            <li class="shedule__catalog-item-info-box-addr-teachers-item">
+                                                <a href="#" class="shedule__catalog-item-info-box-addr-teachers-link">Дарья</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="shedule__catalog-item-info-box-addr-start">Старт 15.03</p>
+                                </div>
+                                <div class="shedule__catalog-item-info-box-mini">
+                                    <p class="shedule__catalog-item-info-box-mini-title">Мини-группа</p>
+                                    <p class="shedule__catalog-item-info-box-mini-days">Пн-Ср 20:30</p>
+                                    <p class="shedule__catalog-item-info-box-mini-price">от 12900/ от 34 800 ₽
+                                        <span class="shedule__catalog-item-info-box-mini-price-discount">-10%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shedule__catalog-item-control">
+                            <ul class="shedule__catalog-item-control-list">
+                                <li class="shedule__catalog-item-control-item">
+                                    <button type="button"
+                                        class="shedule__catalog-item-control-item-button shedule__catalog-item-control-item-button_sign-up">Записаться</button>
+                                </li>
+                                <li class="shedule__catalog-item-control-item">
+                                    <button type="button"
+                                        class="shedule__catalog-item-control-item-button shedule__catalog-item-control-item-button_trial">Пробное
+                                        занятие</button>
+                                </li>
+                                <li class="shedule__catalog-item-control-item">
+                                    <button type="button"
+                                        class="shedule__catalog-item-control-item-button shedule__catalog-item-control-item-button_call-back">
+                                        <img src="/img/shedule/whatsapp-icon.png" alt="Call-back"
+                                            class="shedule__catalog-item-control-item-button-pic">
+                                        <p class="shedule__catalog-item-control-item-button-text">Спросить</p>
+                    
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <a href="#" class="shedule__link">Смотреть все группы</a>
         </section>
 
         <!--Оставить заявку-->

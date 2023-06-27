@@ -1,5 +1,6 @@
 :root {
     --background-general: #FFFFFF;
+    --background-blue: #DAECFF;
     --text-primary: #222222;
     --text-secondary: #7C7C7C;
     --general-red: #F43131;
@@ -17,8 +18,8 @@ body {
 }
 
 .test-1 {
-    width: 300px;
-    height: 100px;
+    /*width: 300px;
+    height: 100px;*/
     background: red;
     border: solid 3px;
     margin: 0 auto;
@@ -60,13 +61,28 @@ body {
     margin: 0 auto;
 }
 
+.container_application {
+    min-height: 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container_trial {
     position: relative;
 }
 
 .container_shedule {
-    min-height: 455px;
+    min-height: 400px;
     margin: 50px auto;
+}
+
+.container_summer {
+    border-radius: 20px;
+    background: url(/img/summer/hey-girl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 0 70px;
 }
 
 .input-box {
@@ -96,6 +112,7 @@ body {
 }
 
 button {
+    height: 50px;
     border-radius: 10px;
     padding: 10px;
     font-weight: 700;
@@ -118,9 +135,13 @@ button {
     color: var(--general-blue);
 }
 
+.form-agreement-link:hover {
+    color: var(--general-red);
+}
+
 .shadow {
     box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
-    
+
 }
 
 /*Курсы языков*/
@@ -440,7 +461,6 @@ button {
 
 .advantages__sign-up-form-button {
     width: 340px;
-    height: 48px;
     border: var(--general-red);
     /*border-radius: 10px;
     padding: 10px;
@@ -692,7 +712,7 @@ button {
     position: absolute;
     top: 0px;
     /*bottom: 0px;*/
-    
+
 }
 
 .trial__item {
@@ -715,9 +735,10 @@ button {
 }
 
 .trial__item_3 {
-        top: 462px;
-        left: 99px;
+    top: 462px;
+    left: 99px;
 }
+
 .trial__item_4 {
     top: 488px;
     left: 421px;
@@ -852,14 +873,14 @@ button {
     position: absolute;
     top: 45px;
     left: 0px;
-        
+
 }
 
 .shedule__parameters-navbar-link {
     font-size: 16px;
     line-height: 150%;
     text-decoration: none;
-    color: var(--text-secondary);  
+    color: var(--text-secondary);
 }
 
 .shedule__parameters-navbar-link:hover {
@@ -870,7 +891,7 @@ button {
     width: 400px;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 .shedule__parameters-preferences-item {
@@ -1017,18 +1038,102 @@ button {
 }
 
 .shedule__catalog-item-control-item-button_call-back:hover {
-    
+
     background: var(--price);
     border: 3px solid var(--price);
     color: var(--background-general);
 }
 
 .shedule__catalog-item-control-item-button-pic {
- display: inline-block;
+    display: inline-block;
 }
 
 .shedule__link {
+    width: 200px;
     display: block;
     margin: 50px auto;
-    width: 200px;
+    color: var(--general-blue);
+}
+
+.shedule__link:hover {
+    color: var(--general-red);
+}
+
+/*Оставить заявку*/
+
+.application {
+    min-height: 165px;
+    margin: 0 0 75px 0;
+    background: var(--background-blue);
+}
+
+.application__content {
+    min-height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.application__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.application__btn {
+    width: 250px;
+    height: 50px;
+    background: var(--general-blue);
+    border: 1px solid var(--general-blue);
+
+}
+
+.application__btn:hover {
+    background: var(--general-red);
+    border: 1px solid var(--general-red);
+}
+
+/*Летняя стажировка*/
+
+.summer {
+    min-height: 250px;
+}
+
+.summer__title {
+    padding: 25px 0 20px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.summer__title-internship {
+    display: block;
+    color: var(--general-blue);
+}
+
+.summer__title-korea {
+    display: block;
+    color: var(--general-red);
+}
+
+.summer__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--background-general);
+}
+
+.summer__btn {
+    width: 225px;
+    margin: 10px 0 0 0;
+    background: var(--background-general);
+    border: 1px solid var(--background-general);
+    color: var(--general-blue);
+}
+
+.summer__btn:hover {
+    background: var(--general-blue);
+    border: 1px solid var(--general-blue);
+    color: var(--background-general);
 }

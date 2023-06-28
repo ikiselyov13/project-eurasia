@@ -1159,6 +1159,7 @@ button {
 .formats__list {
     display: flex;
     justify-content: space-between;
+    /*flex-wrap: wrap;*/
 }
 
 .formats__item {
@@ -1173,6 +1174,13 @@ button {
     font-weight: 700;
     font-size: 29px;
     line-height: 27px;
+}
+
+.formats__item-wrap {
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .formats__item-content {

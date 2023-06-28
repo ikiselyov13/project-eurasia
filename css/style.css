@@ -1,6 +1,7 @@
 :root {
     --background-general: #FFFFFF;
     --background-blue: #DAECFF;
+    --background-light-grey: #F8F8FF;
     --text-primary: #222222;
     --text-secondary: #7C7C7C;
     --general-red: #F43131;
@@ -82,7 +83,6 @@ body {
     background: url(/img/summer/hey-girl.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 0 0 70px;
 }
 
 .input-box {
@@ -444,7 +444,7 @@ button {
 
 .advantages__sign-up-title {
     margin: 0 0 40px 0;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 22px;
     line-height: 27px;
 }
@@ -575,7 +575,7 @@ button {
 }
 
 .catalog__item-content-desc-title {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 22px;
     line-height: 27px;
     text-align: center;
@@ -778,7 +778,7 @@ button {
 
 
 .shedule__title {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 29px;
     line-height: 27px;
 }
@@ -1100,6 +1100,10 @@ button {
     min-height: 250px;
 }
 
+.summer__wrap {
+    margin: 0 0 0 70px;
+}
+
 .summer__title {
     padding: 25px 0 20px 0;
     font-weight: 700;
@@ -1136,4 +1140,148 @@ button {
     background: var(--general-blue);
     border: 1px solid var(--general-blue);
     color: var(--background-general);
+}
+
+/*Форматы занятий*/
+
+.formats {
+    min-height: 400px;
+    margin: 100px 0 0 0;
+}
+
+.formats__title {
+    margin: 0 0 70px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.formats__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formats__item {
+    width: 570px;
+    min-height: 260px;
+    padding: 20px;
+    background: var(--background-general);
+}
+
+.formats__item-title {
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 27px;
+}
+
+.formats__item-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formats__item-content-list {
+    display: flex;
+    min-height: 125px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formats__item-content-item {
+    width: 115px;
+    height: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background: var(--background-blue);
+    color: var(--general-blue);
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.formats__item-content-parameters {
+    width: 400px;
+}
+
+.formats__item-content-parameters-time {
+    background: var(--background-light-grey);
+    color: var(--general-red);
+    height: 25px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.formats__item-content-parameters-price {
+    display: flex;
+    margin: 15px 0 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.formats__item-content-parameters-price-text {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formats__item-content-parameters-price-discount {
+    width: 50px;
+    height: 25px;
+    margin: 0 0 0 10px;
+    background: red;
+    color: var(--background-general);
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.formats__item-advantages {
+    min-height: 30px;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formats__item-advantages-item {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.formats__item-advantages-item-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+}
+
+.formats__item-control {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 50px 0 0 0;*/
+}
+
+.formats__item-control-item-btn {
+    width: 270px;
+    background: var(--general-blue);
+    border: 1px solid var(--general-blue);
+}
+
+.formats__item-control-item-btn:hover {
+    color: var(--general-red);
+}
+
+.formats__item-control-item-btn_visit {
+    background: var(--general-red);
+    border: 1px solid var(--general-red);
+}
+
+.formats__item-control-item-btn_visit:hover {
+    color: var(--general-blue);
 }

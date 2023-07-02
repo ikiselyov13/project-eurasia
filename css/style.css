@@ -1666,7 +1666,77 @@ button {
     background: var(--background-sky);
     border: 1px solid var(--background-sky);
     border-radius: 60px;
-    
+}
+
+/*Видео занятий*/
+
+.lessons__title {
+    margin: 0 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.lessons__title-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
 }
         
+.lessons__title-control-button {
+    width: 30px;
+    height: 30px;
+    background: var(--general-blue);
+    border: 1px solid var(--general-blue);
+    border-radius: 60px;
+}
 
+.lessons__title-control-button_left {
+    width: 30px;
+    height: 30px;
+    background: var(--background-grey);
+    border: 1px solid var(--background-grey);
+    border-radius: 50%;
+}
+
+.lessons__title-control-button_right {
+    width: 30px;
+    height: 30px;
+    background: var(--background-sky);
+    border: 1px solid var(--background-sky);
+    border-radius: 50%;
+}
+
+.lessons__title-control-button_right:hover {
+    background: var(--general-blue);
+    border: 1px solid var(--general-blue);
+}
+
+.lessons__title-control-button-left-triangle {
+    border: 10px solid transparent;
+    margin: -5px 0 0 -15px;
+    border-right: 15px solid var(--background-general);
+}
+
+.lessons__title-control-button-right-triangle {
+    border: 10px solid transparent;
+    margin: -5px 0 0 -1px;
+    border-left: 15px solid var(--background-general);
+}
+
+.lessons__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lessons__item {
+    width: 270px;
+    min-height: 200px;
+    margin: 0 0 40px 0;
+    background: var(--background-deep-grey);
+    border: 2px solid var(--background-deep-grey);
+    border-radius: 15px;
+}

@@ -1,0 +1,57 @@
+/*Как проходит обучение*/
+
+.learning {
+    background: $background-light-grey;
+}
+
+.learning__title {
+    margin: 0 0 50px 0;
+    padding: 50px 0 0 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.learning__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.learning__item {
+    width: 350px;
+    min-height: 160px;
+    margin: 0 0 40px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: $background-general;
+}
+
+.learning__item-features {
+    min-height: 80px;
+    display: flex;
+}
+
+.learning__item-features-icon {
+    margin: 0 25px 0 0;
+}
+
+.learning__item-features-title {
+    height: max-content;
+    align-self: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.learning__item-features-title-color1 {
+    color: $general-blue;
+}
+
+.learning__item-features-title-color2 {
+    color: $general-red;
+}
+
+.learning__item-text {
+    margin: 20px 0 0 0;
+}

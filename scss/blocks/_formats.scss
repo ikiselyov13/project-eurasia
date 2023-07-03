@@ -1,0 +1,152 @@
+/*Форматы занятий*/
+
+.formats {
+    min-height: 400px;
+    margin: 100px 0 0 0;
+}
+
+.formats__title {
+    margin: 0 0 70px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.formats__list {
+    display: flex;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+}
+
+.formats__item {
+    width: 570px;
+    min-height: 260px;
+    padding: 20px;
+    background: $background-general;
+    border-radius: 10px;
+}
+
+.formats__item-title {
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 27px;
+}
+
+.formats__item-wrap {
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formats__item-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formats__item-content-list {
+    display: flex;
+    min-height: 125px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formats__item-content-item {
+    width: 115px;
+    height: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background: $background-blue;
+    color: $general-blue;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.formats__item-content-parameters {
+    width: 400px;
+}
+
+.formats__item-content-parameters-time {
+    background: $background-light-grey;
+    color: $general-red;
+    height: 25px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.formats__item-content-parameters-price {
+    display: flex;
+    margin: 15px 0 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.formats__item-content-parameters-price-text {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formats__item-content-parameters-price-discount {
+    width: 50px;
+    height: 25px;
+    margin: 0 0 0 10px;
+    background: $general-red;
+    color: $background-general;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.formats__item-advantages {
+    min-height: 30px;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formats__item-advantages-item {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.formats__item-advantages-item-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+}
+
+.formats__item-control {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 50px 0 0 0;*/
+}
+
+.formats__item-control-item-btn {
+    width: 270px;
+    background: $general-blue;
+    border: 1px solid $general-blue;
+}
+
+.formats__item-control-item-btn:hover {
+    color: $general-red;
+}
+
+.formats__item-control-item-btn_visit {
+    background: $general-red;
+    border: 1px solid $general-red;
+}
+
+.formats__item-control-item-btn_visit:hover {
+    color: $general-blue;
+}

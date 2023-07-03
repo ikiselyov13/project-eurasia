@@ -1,0 +1,54 @@
+/*Летняя стажировка*/
+
+.container_summer {
+    border-radius: 20px;
+    background: url(/img/summer/hey-girl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.summer {
+    min-height: 250px;
+}
+
+.summer__wrap {
+    margin: 0 0 0 70px;
+}
+
+.summer__title {
+    padding: 25px 0 20px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.summer__title-internship {
+    display: block;
+    color: $general-blue;
+}
+
+.summer__title-korea {
+    display: block;
+    color: $general-red;
+}
+
+.summer__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: $background-general;
+}
+
+.summer__btn {
+    width: 225px;
+    margin: 10px 0 0 0;
+    background: $background-general;
+    border: 1px solid $background-general;
+    color: $general-blue;
+}
+
+.summer__btn:hover {
+    background: $general-blue;
+    border: 1px solid $general-blue;
+    color: $background-general;
+}

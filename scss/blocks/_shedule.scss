@@ -1,0 +1,289 @@
+/*Расписание и цены*/
+
+.container_shedule {
+    min-height: 400px;
+    margin: 50px auto;
+}
+
+.shedule__title {
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 27px;
+}
+
+.shedule__parameters {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 10px 0;
+}
+
+.shedule__parameters-list {
+    width: 625px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shedule__parameters-age {
+    border: 1px solid $text-secondary;
+    border-radius: 5px;
+    width: 162px;
+}
+
+.shedule__parameters-age-button {
+    border: none;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    background: $background-general;
+    color: $text-secondary;
+}
+
+.shedule__parameters-age-button_adults {
+    margin: 0 -5px 0 0;
+    background: $general-blue;
+    color: $background-general;
+}
+
+.shedule__parameters-age-button_adults:hover {
+    color: $text-primary;
+}
+
+.shedule__parameters-age-button_kids:hover {
+    color: $text-primary;
+}
+
+.shedule__parameters-age-button_kids:active {
+    background: $general-blue;
+    color: $background-general;
+}
+
+.shedule__parameters-item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid $text-secondary;
+    width: 162px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: $text-secondary;
+}
+
+.shedule__parameters-item:hover .shedule__parameters-navbar {
+    display: block;
+}
+
+.shedule__parameters-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 5px 0 0 5px;
+    border-top: 7px solid $text-secondary;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.shedule__parameters-navbar {
+    width: 95%;
+    min-height: 100px;
+    padding: 5px 1px 0 10px;
+    text-align: left;
+    /*display: block;*/
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background: $background-general;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+
+}
+
+.shedule__parameters-navbar-link {
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    color: $text-secondary;
+}
+
+.shedule__parameters-navbar-link:hover {
+    color: $text-primary;
+}
+
+.shedule__parameters-preferences-list {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.shedule__parameters-preferences-item {
+    color: $text-secondary;
+    margin: 0 20px 0 0;
+}
+
+.shedule__catalog-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shedule__catalog-item {
+    width: 570px;
+    min-height: 180px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.shedule__catalog-item-info-box {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+}
+
+.shedule__catalog-item-info-title {
+    line-height: 35px;
+}
+
+.shedule__catalog-item-info-box-addr-map-icon {
+    width: 18px;
+    height: 15px;
+}
+
+.shedule__catalog-item-info-box-addr-map {
+    line-height: 35px;
+}
+
+.shedule__catalog-item-info-box-addr-map-link {
+    color: $text-secondary;
+}
+
+.shedule__catalog-item-info-box-addr-map-link:hover {
+    color: $text-primary;
+}
+
+.shedule__catalog-item-info-box-addr-teachers-title {
+    color: $text-secondary;
+    font-weight: normal;
+    line-height: 35px;
+}
+
+.shedule__catalog-item-info-box-addr-teachers-item {
+    line-height: 20px;
+}
+
+.shedule__catalog-item-info-box-addr-teachers-link {
+    color: $general-blue;
+}
+
+.shedule__catalog-item-info-box-addr-teachers-link:hover {
+    color: $general-red;
+}
+
+.shedule__catalog-item-info-box-addr-start {
+    font-weight: bolder;
+    color: $general-red;
+    margin: 15px 0 0 0;
+}
+
+.shedule__catalog-item-info-box-mini-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.shedule__catalog-item-info-box-mini-days {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 35px;
+    color: $text-secondary;
+}
+
+.shedule__catalog-item-info-box-mini-price {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-secondary;
+}
+
+.shedule__catalog-item-info-box-mini-price-discount {
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+    margin: 5px 0 0 0;
+    background: $general-red;
+    color: $background-general;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.shedule__catalog-item-control-item-button {
+    width: 150px;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.shedule__catalog-item-control-item-button_sign-up {
+    background: $general-red;
+    border: 1px solid $general-red;
+}
+
+.shedule__catalog-item-control-item-button_sign-up:hover {
+    color: $general-blue;
+}
+
+.shedule__catalog-item-control-item-button_trial {
+    background: $general-blue;
+    border: 1px solid $general-blue;
+}
+
+.shedule__catalog-item-control-item-button_trial:hover {
+    color: $general-red;
+}
+
+.shedule__catalog-item-control-item-button_call-back {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: $background-general;
+    border: 3px solid $price;
+    color: $text-primary;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.shedule__catalog-item-control-item-button_call-back:hover {
+
+    background: $price;
+    border: 3px solid $price;
+    color: $background-general;
+}
+
+.shedule__catalog-item-control-item-button-pic {
+    display: inline-block;
+}
+
+.shedule__link {
+    width: 200px;
+    display: block;
+    margin: 50px auto;
+    color: $general-blue;
+}
+
+.shedule__link:hover {
+    color: $general-red;
+}

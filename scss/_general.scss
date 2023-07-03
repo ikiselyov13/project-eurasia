@@ -1,0 +1,68 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    background: $background-general;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    width: 1248px;
+    margin: 0 auto;
+}
+
+.input-box {
+    height: 34px;
+    border: solid 1px $input-border;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-secondary;
+}
+
+button {
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $background-general;
+}
+
+.form-agreement {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-secondary;
+}
+
+.form-agreement-link {
+    color: $general-blue;
+}
+
+.form-agreement-link:hover {
+    color: $general-red;
+}
+
+.shadow {
+    box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
+}

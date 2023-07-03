@@ -1,0 +1,41 @@
+/*Оставить заявку*/
+
+.container_application {
+    min-height: 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.application {
+    min-height: 165px;
+    margin: 0 0 75px 0;
+    background: $background-blue;
+}
+
+.application__content {
+    min-height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.application__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.application__btn {
+    width: 250px;
+    height: 50px;
+    background: $general-blue;
+    border: 1px solid $general-blue;
+
+}
+
+.application__btn:hover {
+    background: $general-red;
+    border: 1px solid $general-red;
+}

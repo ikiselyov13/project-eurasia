@@ -1,0 +1,102 @@
+/*Преподаватели*/
+
+.teachers {
+    min-height: 450px;
+    margin: 100px 0 0 0;
+}
+
+.teachers__title {
+    margin: 0 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.teachers__title-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+}
+
+.teachers__title-control-button {
+    width: 30px;
+    height: 30px;
+    background: $general-blue;
+    border: 1px solid $general-blue;
+    border-radius: 60px;
+}
+
+.teachers__title-control-button_left {
+    width: 30px;
+    height: 30px;
+    background: $background-grey;
+    border: 1px solid $background-grey;
+    border-radius: 50%;
+}
+
+.teachers__title-control-button_right {
+    width: 30px;
+    height: 30px;
+    background: $background-sky;
+    border: 1px solid $background-sky;
+    border-radius: 50%;
+}
+
+.teachers__title-control-button_right:hover {
+    background: $general-blue;
+    border: 1px solid $general-blue;
+}
+
+.teachers__title-control-button-left-triangle {
+    border: 10px solid transparent;
+    margin: -5px 0 0 -15px;
+    border-right: 15px solid $background-general;
+}
+
+.teachers__title-control-button-right-triangle {
+    border: 10px solid transparent;
+    margin: -5px 0 0 -1px;
+    border-left: 15px solid $background-general;
+}
+
+.teachers__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.teachers__item {
+    width: 300px;
+}
+
+.teachers__item-photo {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    background: $background-deep-grey;
+    border: 1px solid $background-deep-grey;
+    border-radius: 50%;
+}
+
+.teachers__item-name {
+    margin: 20px 0 10px 0;
+    color: $general-blue;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.teachers__item-desc {
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.teachers__item-text {
+    line-height: 150%;
+    color: $text-secondary;
+}

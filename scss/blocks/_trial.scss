@@ -1,0 +1,121 @@
+/*Пробный урок*/
+
+.container_trial {
+    position: relative;
+}
+
+.input-box_trial {
+    width: 275px;
+    padding: 10px 0 10px 20px;
+    /*margin: 0 10px 0 0;*/
+}
+
+.trial {
+    min-height: 600px;
+    padding: 40px 0 0 0;
+    background: #F6F9FC;
+}
+
+.trial__title {
+    width: 745px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.trial__title-benefit {
+    color: $general-red;
+}
+
+.trial__sign-up-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    width: 615px;
+    min-height: 215px;
+    padding: 25px;
+    border-radius: 20px;
+    background: $background-general;
+}
+
+.trial__sign-up-form-button {
+    width: 295px;
+    height: 55px;
+    background: $general-blue;
+    border: $general-blue;
+}
+
+.trial__sign-up-form-button:hover {
+    background: $general-red;
+    border: $general-red;
+}
+
+.trial__list {
+    position: absolute;
+    top: 0px;
+    /*bottom: 0px;*/
+
+}
+
+.trial__item {
+    display: flex;
+    width: max-content;
+    border-radius: 10px;
+    padding: 13px 10px 13px 10px;
+    background: $background-general;
+    position: absolute;
+}
+
+.trial__item_1 {
+    top: 140px;
+    left: 70px;
+}
+
+.trial__item_2 {
+    top: 285px;
+    left: 125px;
+}
+
+.trial__item_3 {
+    top: 462px;
+    left: 99px;
+}
+
+.trial__item_4 {
+    top: 488px;
+    left: 421px;
+}
+
+.trial__item-box {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $general-blue;
+    border-radius: 60px;
+    color: $background-general;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.trial__item-box-number {
+    display: inline-block;
+}
+
+.trial__item-content {
+    margin: 0 0 0 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.trial__item-content-text {
+    vertical-align: middle;
+}

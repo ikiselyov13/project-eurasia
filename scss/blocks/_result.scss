@@ -1,12 +1,18 @@
 /*Результат*/
 
+
 .result {
-    /*width: 1650px;*/
     min-height: 700px;
-    /*padding: 100px 0 0 0;*/
-    background: url(/img/result/arrow.png);
+    background: url(../../img/result/vector.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+
+    @include tablet {
+        background: url(../../img/result/vector-tablet.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 .result__title {
@@ -24,7 +30,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background: url(/img/result/sertificate.jpg);
+    background: url(../img/result/sertificate.jpg);
     background-size: contain;
 }
 
@@ -54,8 +60,12 @@
 }
 
 .result__item_1 {
-    top: 65px;
+    top: 60px;
     left: 65px;
+
+    @include tablet {
+        left: 100px;
+    }
 }
 
 .result__item_2 {
@@ -65,25 +75,23 @@
     justify-content: space-between;
     top: 235px;
     left: -370px;
+
+    @include tablet {
+        left: -345px;
+    }
 }
 
 .result__item_3 {
     top: 315px;
     left: 80px;
+
+    @include tablet {
+        left: -5px;
+    }
 }
 
 .result__item-box {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $general-blue;
-    border-radius: 60px;
-    color: $background-general;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    @include item-dec;
 }
 
 .result__item-box-number {

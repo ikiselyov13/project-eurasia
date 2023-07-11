@@ -7,7 +7,6 @@
 .input-box_trial {
     width: 275px;
     padding: 10px 0 10px 20px;
-    /*margin: 0 10px 0 0;*/
 }
 
 .trial {
@@ -35,12 +34,17 @@
     flex-wrap: wrap;
     position: absolute;
     top: 200px;
-    right: 0px;
+    right: 10px;
     width: 615px;
     min-height: 215px;
     padding: 25px;
     border-radius: 20px;
     background: $background-general;
+
+    @include tablet {
+        position: static;
+        margin: 0 auto;
+    }
 }
 
 .trial__sign-up-form-button {
@@ -58,7 +62,6 @@
 .trial__list {
     position: absolute;
     top: 0px;
-    /*bottom: 0px;*/
 
 }
 
@@ -92,17 +95,7 @@
 }
 
 .trial__item-box {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $general-blue;
-    border-radius: 60px;
-    color: $background-general;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    @include item-dec;
 }
 
 .trial__item-box-number {

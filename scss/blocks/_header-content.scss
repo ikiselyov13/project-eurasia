@@ -1,0 +1,205 @@
+.header-content {
+    min-height: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content__picture-logo {
+    width: 300px;
+    height: 80px;
+    background: url(../../img/header/logo-orig.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include tablet {
+        width: 275px;
+        height: 70px;
+    }
+}
+
+.header-content__picture {
+    display: flex;
+    align-items: center;
+}
+
+.header-content__picture-drop-down {
+    margin: 0 0 0 20px;
+    position: relative;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.header-content__picture-drop-down-text {
+    display: inline-block;
+    color: $general-blue;
+    text-decoration: underline;
+}
+
+.header-content__picture-drop-down-text:hover {
+    cursor: pointer;
+    display: inline-block;
+    color: $general-red;
+    text-decoration: underline;
+}
+
+.header-content__picture-drop-down-text-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 0 0 5px;
+    border-top: 7px solid $text-secondary;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.header-content__picture-navbar {
+    width: 150px;
+    min-height: 100px;
+    padding: 5px;
+    display: none;
+    position: absolute;
+    top: 25px;
+    border-radius: 10px;
+    background: $background-general;
+}
+
+.header-content__picture-drop-down:hover .header-content__picture-navbar {
+    display: block;
+}
+
+.header-content__picture-navbar-link {
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    color: $text-secondary;
+}
+
+.header-content__picture-navbar-link:hover {
+    color: $text-primary;
+}
+
+.header-content__contacts {
+    width: 624px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.header-content__menu {
+    display: inline-block;
+}
+
+.header-content__menu-list {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-content__menu-link {
+    text-decoration: none;
+    color: $text-secondary;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.header-content__menu-link:hover {
+    text-decoration: underline;
+    color: $text-primary;
+}
+
+.header-content__search {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $background-general;
+}
+
+.header-content__search:hover {
+    border: 1px solid $text-secondary;
+}
+
+.header-content__call {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content__call-phone {
+    color: $text-primary;
+    font-weight: bolder;
+}
+
+.header-content__call-socials {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content__call-btn {
+    background: $background-general;
+    color: $general-red;
+    width: 220px;
+    min-height: 50px;
+    border: 1px solid $general-red;
+}
+
+.header-content__call-btn:hover {
+    color: $general-blue;
+    border: 1px solid $general-blue;
+}
+
+.header-content__burger {
+    display: none;
+    position: relative;
+    border: 1px solid $background-general;
+
+    @include tablet {
+        display: block;
+        width: 48px;
+        height: 48px;
+        align-self: center;
+        background: url(../img/header/icon-park-outline_hamburger-button.png);
+    }
+}
+
+.header-content__burger:hover {
+    border: 1px solid $general-red;
+}
+
+.header-content__burger:hover .header-content__burger-navbar {
+    display: block;
+}
+
+.header-content__burger-navbar {
+    width: 150px;
+    min-height: 100px;
+    padding: 5px;
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    border-radius: 10px;
+    background: $background-general;
+}
+
+.header-content__burger:hover .header-content__burger-navbar {
+    display: block;
+}
+
+.header-content__burger-navbar-link {
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    color: $text-secondary;
+}
+
+.header-content__burger-navbar-link:hover {
+    color: $text-primary;
+}

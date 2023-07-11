@@ -1,0 +1,62 @@
+@mixin tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+}
+
+@mixin control-button {
+    width: 30px;
+    height: 30px;
+    background: $general-blue;
+    border: 1px solid $general-blue;
+    border-radius: 50%;
+}
+
+@mixin control-button-left {
+    background: $background-grey;
+    border: 1px solid $background-grey;
+}
+
+@mixin control-button-right {
+    background: $background-sky;
+    border: 1px solid $background-sky;
+}
+
+@mixin control-button-left-triangle {
+    border: 10px solid transparent;
+    margin: -5px 0 0 -15px;
+    border-right: 15px solid $background-general;
+}
+
+@mixin control-button-right-triangle {
+    border: 10px solid transparent;
+    margin: -5px 0 0 -1px;
+    border-left: 15px solid $background-general;
+}
+
+@mixin item-dec {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $general-blue;
+    border-radius: 60px;
+    color: $background-general;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}

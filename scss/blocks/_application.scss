@@ -5,12 +5,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet {
+        display: block;
+        text-align: center;
+        padding: 0 0 40px 0;
+    }
 }
 
 .application {
     min-height: 165px;
     margin: 0 0 75px 0;
     background: $background-blue;
+
+    @include tablet {
+        margin: 75px 0 75px 0;
+    }
 }
 
 .application__content {

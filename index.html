@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,16 +17,9 @@
 
     <!--Курсы языков-->
     <header class="container">
-        <div class="header-content ">
+        <section class="header-content">
             <div class="header-content__picture">
-                <img src="/img/header/logo.png" alt="Логотип" class="header-content__picture-logo">
-                <div class="header-content__title">
-                    <p class="header-content__title-eur">
-                        <span class="header-content__title-eur-let-e">Е</span>вр<span
-                            class="header-content__title-eur-let-a">а</span>зия
-                    </p>
-                    <p class="header-content__title-lang">Языковой центр</p>
-                </div>
+                <div class="header-content__picture-logo"></div>
                 <div class="header-content__picture-drop-down">
                     <p class="header-content__picture-drop-down-text">Наши отделения</p>
                     <div class="header-content__picture-drop-down-text-icon"></div>
@@ -46,52 +39,66 @@
                         </ul>
                     </nav>
                 </div>
-
-
             </div>
-            <div class="header-contacts">
-                <div class="header-contacts__navigation">
-                    <nav class="header-contacts__menu">
-                        <ul class="header-contacts__menu-list">
-                            <li class="header-contacts__menu-item"><a href="#" class="header-contacts__menu-link">О
+            <div class="header-content__contacts">
+                <div class="header-content__navigation">
+                    <nav class="header-content__menu">
+                        <ul class="header-content__menu-list">
+                            <li class="header-content__menu-item"><a href="#" class="header-content__menu-link">О
                                     нас</a></li>
-                            <li class="header-contacts__menu-item"><a href="#"
-                                    class="header-contacts__menu-link">Преподаватели</a></li>
-                            <li class="header-contacts__menu-item"><a href="#"
-                                    class="header-contacts__menu-link">Цены</a></li>
-                            <li class="header-contacts__menu-item"><a href="#"
-                                    class="header-contacts__menu-link">Горящие группы</a></li>
-                            <li class="header-contacts__menu-item"><a href="#"
-                                    class="header-contacts__menu-link">Контакты</a></li>
-                            <li class="header-contacts__menu-item"><a href="#" class="header-contacts__menu-link">Пройти
+                            <li class="header-content__menu-item"><a href="#"
+                                    class="header-content__menu-link">Преподаватели</a></li>
+                            <li class="header-content__menu-item"><a href="#"
+                                    class="header-content__menu-link">Цены</a></li>
+                            <li class="header-content__menu-item"><a href="#"
+                                    class="header-content__menu-link">Горящие группы</a></li>
+                            <li class="header-content__menu-item"><a href="#"
+                                    class="header-content__menu-link">Контакты</a></li>
+                            <li class="header-content__menu-item"><a href="#" class="header-content__menu-link">Пройти
                                     тест</a></li>
                         </ul>
                     </nav>
-                    <img src="/img/header/search.png" alt="Поиск" class="header-contacts__search">
+                    <img src="./img/header/search.png" alt="Поиск" class="header-content__search">
                 </div>
-                <div class="header-contacts__content">
-                    <p class="header-contacts__content-phone">+7 (495) -877-47-01</p>
-                    <ul class="header-contacts__content-socials">
-                        <li class="header-contacts__content-socials-link"><a href="#"
-                                class="header-contacts__content-socials-icon"><img src="/img/header/phone-call-icon.png"
+                <div class="header-content__call">
+                    <p class="header-content__call-phone">+7 (495) -877-47-01</p>
+                    <ul class="header-content__call-socials">
+                        <li class="header-content__call-socials-link"><a href="#"
+                                class="header-content__call-socials-icon"><img src="./img/header/phone-call-icon.png"
                                     alt="Call-back"></a></li>
-                        <li class="header-contacts__content-socials-link"><a href="#"
-                                class="header-contacts__content-socials-icon"><img src="/img/header/telegram-icon.png"
+                        <li class="header-content__call-socials-link"><a href="#"
+                                class="header-content__call-socials-icon"><img src="./img/header/telegram-icon.png"
                                     alt="Telegram"></a></li>
-                        <li class="header-contacts__content-socials-link"><a href="#"
-                                class="header-contacts__content-socials-icon"><img src="/img/header/whatsapp-icon.png"
+                        <li class="header-content__call-socials-link"><a href="#"
+                                class="header-content__call-socials-icon"><img src="./img/header/whatsapp-icon.png"
                                     alt="Whatsapp"></a></li>
-                        <li class="header-contacts__content-socials-link"><a href="#"
-                                class="header-contacts__content-socials-icon"><img src="/img/header/viber-icon.png"
+                        <li class="header-content__call-socials-link"><a href="#"
+                                class="header-content__call-socials-icon"><img src="./img/header/viber-icon.png"
                                     alt="Viber"></a></li>
                     </ul>
-                    <button type="button" class="header-contacts__content-btn">
-                        <p class="header-contacts__content-btn-text">Записаться на курсы</p>
+                    <button type="button" class="header-content__call-btn">
+                        <p class="header-content__call-btn-text">Записаться на курсы</p>
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="header-nav">
+            <div class="header-content__burger">
+                <!--Выпадающее меню Наши отделения-->
+                <nav class="header-content__burger-navbar shadow">
+                    <ul class="header-content__burger-navbar-list">
+                        <li class="header-content__burger-navbar-item">
+                            <a href="#" class="header-content__burger-navbar-link">item 1</a>
+                        </li>
+                        <li class="header-content__burger-navbar-item">
+                            <a href="#" class="header-content__burger-navbar-link">item 2</a>
+                        </li>
+                        <li class="header-content__burger-navbar-item">
+                            <a href="#" class="header-content__burger-navbar-link">item 3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="header-nav">
             <nav class="header-nav__menu">
                 <ul class="header-nav__menu-list">
                     <li class="header-nav__menu-item">
@@ -132,42 +139,41 @@
                 <a href="#" class="header-nav__pagination-link">Главная</a>
                 <p class="header-nav__pagination-text">> Курсы китайского языка</p>
             </div>
-        </div>
+        </section>
     </header>
     <main>
 
         <!--Преимущества-->
         <section class="advantages">
-            <h1 class="visually-hidden">Курсы китайского языка</h1>
-            <h2 class="visually-hidden">Преимущества</h2>
+            <h1 class="advantages__title">Курсы китайского языка</h1>
             <div class="advantages__content container">
                 <article class="advantages__features">
-                    <h3 class="advantages__features-title">Курсы китайского языка</h3>
+                    <h2 class="advantages__features-title">Курсы китайского языка</h2>
                     <ul class="advantages__features-list">
                         <li class="advantages__features-item">
-                            <img src="/img/advantages/people-icon.png" alt="Люди" class="advantages__features-icon">
+                            <img src="./img/advantages/people-icon.png" alt="Люди" class="advantages__features-icon">
                             <p class="advantages__features-text">2 педагога: русский+ носитель — наша уникальная
                                 методика</p>
                         </li>
                         <li class="advantages__features-item">
-                            <img src="/img/advantages/clock-icon.png" alt="Часы" class="advantages__features-icon">
+                            <img src="./img/advantages/clock-icon.png" alt="Часы" class="advantages__features-icon">
                             <p class="advantages__features-text">Обучаем с 2004г</p>
                         </li>
                         <li class="advantages__features-item">
-                            <img src="/img/advantages/voice-icon.png" alt="Голос" class="advantages__features-icon">
+                            <img src="./img/advantages/voice-icon.png" alt="Голос" class="advantages__features-icon">
                             <p class="advantages__features-text">Кейс метод: знаем, как начать говорить сегодня</p>
                         </li>
                         <li class="advantages__features-item">
-                            <img src="/img/advantages/license-icon.png" alt="Лицензия"
+                            <img src="./img/advantages/license-icon.png" alt="Лицензия"
                                 class="advantages__features-icon">
                             <p class="advantages__features-text">Лицензия-сертификат</p>
                         </li>
                     </ul>
                 </article>
                 <article class="advantages__sign-up">
-                    <h3 class="advantages__sign-up-title">
+                    <h2 class="advantages__sign-up-title">
                         Записаться на <span class="advantages__sign-up-title-benefit">бесплатный</span> пробный урок
-                    </h3>
+                    </h2>
                     <form action="#" class="advantages__sign-up-form">
                         <label>
                             <span class="visually-hidden">text</span>
@@ -233,13 +239,13 @@
                         уровне,
                         но и развивающий другие важные личностные характеристики.</p>
                 </article>
-
                 <!--Видео-->
                 <article class="desc__video">
                     <h3 class="visually-hidden">Описание курсов видео</h3>
                     <video class="desc__video-content" controls></video>
                 </article>
             </div>
+            <p class="desc__full">Читать полностью</p>
         </section>
 
         <!--Каталог-->
@@ -249,7 +255,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/smile-girl.jpg" alt="Китайский с нуля"
+                            <img src="./img/catalog/smile-girl.jpg" alt="Китайский с нуля"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -280,7 +286,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/copybooks.jpg" alt="Китайский для продолжающих"
+                            <img src="./img/catalog/copybooks.jpg" alt="Китайский для продолжающих"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -312,7 +318,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/notebook.jpg" alt="Курсы китайского онлайн"
+                            <img src=./catalog/notebook.jpg" alt="Курсы китайского онлайн"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -343,7 +349,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/pupil-teacher.jpg" alt="Курсы китайского языка для детей"
+                            <img src="./img/catalog/pupil-teacher.jpg" alt="Курсы китайского языка для детей"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -375,7 +381,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/folder-girl.jpg" alt="Курсы бизнес китайского"
+                            <img src="./img/catalog/folder-girl.jpg" alt="Курсы бизнес китайского"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -407,7 +413,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/hieroglyphs.jpg" alt="Курсы китайской каллиграфии"
+                            <img src="./img/catalog/hieroglyphs.jpg" alt="Курсы китайской каллиграфии"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -439,7 +445,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/chinese-girls.jpg" alt="Курсы китайского в Китае"
+                            <img src="./img/catalog/chinese-girls.jpg" alt="Курсы китайского в Китае"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -471,7 +477,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/copybook-girl.jpg" alt="Репетитор по китайскому языку"
+                            <img src="./img/catalog/copybook-girl.jpg" alt="Репетитор по китайскому языку"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -503,7 +509,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/tables-students.jpg" alt="Подготовка к HSK (пробные тесты)"
+                            <img src="./img/catalog/tables-students.jpg" alt="Подготовка к HSK (пробные тесты)"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -536,7 +542,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/pen-girl.jpg" alt="Сдать HSK в Москве"
+                            <img src="./img/catalog/pen-girl.jpg" alt="Сдать HSK в Москве"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -568,7 +574,7 @@
                 <li class="catalog__item shadow">
                     <div class="catalog__item-content">
                         <div class="catalog__item-content-pic">
-                            <img src="/img/catalog/pencils-students.jpg" alt="Тест на знание китайского языка"
+                            <img src="./img/catalog/pencils-students.jpg" alt="Тест на знание китайского языка"
                                 class="catalog__item-content-pic-image">
                             <p class="catalog__item-content-pic-price">От 7900 ₽/мес</p>
                             <a href="#" class="catalog__item-content-pic-details">Подробнее</a>
@@ -608,7 +614,7 @@
                     <span class="trial__title-benefit">бесплатный</span>
                     урок китайского языка
                 </h2>
-                <img src="/img/trial/blue-copybooks.png" alt="blue-copybooks">
+                <img src="./img/trial/blue-copybooks.png" alt="blue-copybooks">
                 <article class="trial__sign-up">
                     <h3 class="visually-hidden">Запись на бесплатный пробный урок</h3>
                     <form action="#" class="trial__sign-up-form shadow">
@@ -638,7 +644,7 @@
                     </form>
                 </article>
                 <ul class="trial__list">
-                    <li class="trial__item trial__item_1">
+                    <li class="trial__item trial__item_1 shadow">
                         <div class="trial__item-box">
                             <span class="trial__item-box-number">1</span>
                         </div>
@@ -646,7 +652,7 @@
                             <span class="trial__item-content-text">Познакомим с китайским языком</span>
                         </div>
                     </li>
-                    <li class="trial__item trial__item_2">
+                    <li class="trial__item trial__item_2 shadow">
                         <div class="trial__item-box">
                             <span class="trial__item-box-number">2</span>
                         </div>
@@ -654,7 +660,7 @@
                             <span class="trial__item-content-text">Проверим уровень</span>
                         </div>
                     </li>
-                    <li class="trial__item trial__item_3">
+                    <li class="trial__item trial__item_3 shadow">
                         <div class="trial__item-box">
                             <span class="trial__item-box-number">3</span>
                         </div>
@@ -662,7 +668,7 @@
                             <span class="trial__item-content-text">Расскажем о методике</span>
                         </div>
                     </li>
-                    <li class="trial__item trial__item_4">
+                    <li class="trial__item trial__item_4 shadow">
                         <div class="trial__item-box">
                             <span class="trial__item-box-number">4</span>
                         </div>
@@ -678,7 +684,7 @@
         <section class="shedule container container_shedule">
             <h2 class="shedule__title">
                 Расписание и цены
-                <img src="/img/shedule/fire-icon.png" alt="fire-icon">
+                <img src="./img/shedule/fire-icon.png" alt="fire-icon">
             </h2>
             <article class="shedule__parameters">
                 <h3 class="visually-hidden">Параметры группы</h3>
@@ -781,7 +787,7 @@
                             <div class="shedule__catalog-item-info-box">
                                 <div class="shedule__catalog-item-info-box-addr">
                                     <div class="shedule__catalog-item-info-box-addr-map">
-                                        <img src="/img/shedule/map-icon.png" alt="map"
+                                        <img src="./img/shedule/map-icon.png" alt="map"
                                             class="shedule__catalog-item-info-box-addr-map-icon">
                                         <a href="#" class="shedule__catalog-item-info-box-addr-map-link">м.Курская</a>
                                     </div>
@@ -824,7 +830,7 @@
                                 <li class="shedule__catalog-item-control-item">
                                     <button type="button"
                                         class="shedule__catalog-item-control-item-button shedule__catalog-item-control-item-button_call-back">
-                                        <img src="/img/shedule/whatsapp-icon.png" alt="Call-back"
+                                        <img src="./img/shedule/whatsapp-icon.png" alt="Call-back"
                                             class="shedule__catalog-item-control-item-button-pic">
                                         <p class="shedule__catalog-item-control-item-button-text">Спросить</p>
 
@@ -839,7 +845,7 @@
                             <div class="shedule__catalog-item-info-box">
                                 <div class="shedule__catalog-item-info-box-addr">
                                     <div class="shedule__catalog-item-info-box-addr-map">
-                                        <img src="/img/shedule/map-icon.png" alt="map"
+                                        <img src="./img/shedule/map-icon.png" alt="map"
                                             class="shedule__catalog-item-info-box-addr-map-icon">
                                         <a href="#" class="shedule__catalog-item-info-box-addr-map-link">м.Курская</a>
                                     </div>
@@ -882,7 +888,7 @@
                                 <li class="shedule__catalog-item-control-item">
                                     <button type="button"
                                         class="shedule__catalog-item-control-item-button shedule__catalog-item-control-item-button_call-back">
-                                        <img src="/img/shedule/whatsapp-icon.png" alt="Call-back"
+                                        <img src="./img/shedule/whatsapp-icon.png" alt="Call-back"
                                             class="shedule__catalog-item-control-item-button-pic">
                                         <p class="shedule__catalog-item-control-item-button-text">Спросить</p>
 
@@ -986,12 +992,12 @@
                             </article>
                             <ul class="formats__item-advantages">
                                 <li class="formats__item-advantages-item">
-                                    <img src="/img/formats/check-icon.png" alt="marker" class="formats__item-advantages-item-icon">
+                                    <img src="./img/formats/check-icon.png" alt="marker" class="formats__item-advantages-item-icon">
                                     <p>Пропуски не сгорают</p>
                             
                                 </li>
                                 <li class="formats__item-advantages-item">
-                                    <img src="/img/formats/check-icon.png" alt="marker" class="formats__item-advantages-item-icon">
+                                    <img src="./img/formats/check-icon.png" alt="marker" class="formats__item-advantages-item-icon">
                                     <p>Быстрый старт в течение 2 недель</p>
                             
                                 </li>
@@ -1019,45 +1025,61 @@
                     <p class="teachers__title-text">Преподаватели китайского</p>
                     <div class="teachers__title-control">
                         <button type="button" class="teachers__title-control-button teachers__title-control-button_left">
+                            <span class="visually-hidden">Назад</span>
                             <div class="teachers__title-control-button-left-triangle"></div>
                         </button>
                         <button type="button" class="teachers__title-control-button teachers__title-control-button_right">
+                            <span class="visually-hidden">Вперед</span>
                             <div class="teachers__title-control-button-right-triangle"></div>
                         </button>
-                        <!--<img src="" alt="arrow" class="teachers__title-control-arrow">
-                        <img src="" alt="arrow" class="teachers__title-control-arrow">-->
-                    </div>
-                    
+                    </div> 
                 </h2>
-                <ul class="teachers__list">
-                    <li class="teachers__item">
-                        <div class="teachers__item-photo"></div>
-                        <h3 class="teachers__item-name">Тин-Тин</h3>
-                        <p class="teachers__item-desc">Носитель китайского языка</p>
-                        <p class="teachers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur officiis eum vel ipsum odit unde repellendus sed, voluptates numquam.</p>
-                    </li>
-                    <li class="teachers__item">
-                        <div class="teachers__item-photo"></div>
-                        <h3 class="teachers__item-name">Тин-Тин</h3>
-                        <p class="teachers__item-desc">Носитель китайского языка</p>
-                        <p class="teachers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur officiis
-                            eum vel ipsum odit unde repellendus sed, voluptates numquam.</p>
-                    </li>
-                    <li class="teachers__item">
-                        <div class="teachers__item-photo"></div>
-                        <h3 class="teachers__item-name">Тин-Тин</h3>
-                        <p class="teachers__item-desc">Носитель китайского языка</p>
-                        <p class="teachers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur officiis
-                            eum vel ipsum odit unde repellendus sed, voluptates numquam.</p>
-                    </li>
-                    <li class="teachers__item">
-                        <div class="teachers__item-photo"></div>
-                        <h3 class="teachers__item-name">Тин-Тин</h3>
-                        <p class="teachers__item-desc">Носитель китайского языка</p>
-                        <p class="teachers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur officiis
-                            eum vel ipsum odit unde repellendus sed, voluptates numquam.</p>
-                    </li>
-                </ul>
+                <div class="teachers__content">
+                    <button type="button" class="teachers__content-control-button teachers__content-control-button_left">
+                        <span class="visually-hidden">Назад</span>
+                        <div class="teachers__content-control-button-left-triangle"></div>
+                    </button>
+                    
+                    <ul class="teachers__list">
+                        <li class="teachers__item">
+                            <div class="teachers__item-photo"></div>
+                            <h3 class="teachers__item-name">Тин-Тин</h3>
+                            <p class="teachers__item-desc">Носитель китайского языка</p>
+                            <p class="teachers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur
+                                officiis eum vel ipsum odit unde repellendus sed, voluptates numquam.</p>
+                        </li>
+                        <li class="teachers__item">
+                            <div class="teachers__item-photo"></div>
+                            <h3 class="teachers__item-name">Тин-Тин</h3>
+                            <p class="teachers__item-desc">Носитель китайского языка</p>
+                            <p class="teachers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur
+                                officiis
+                                eum vel ipsum odit unde repellendus sed, voluptates numquam.</p>
+                        </li>
+                        <li class="teachers__item">
+                            <div class="teachers__item-photo"></div>
+                            <h3 class="teachers__item-name">Тин-Тин</h3>
+                            <p class="teachers__item-desc">Носитель китайского языка</p>
+                            <p class="teachers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur
+                                officiis
+                                eum vel ipsum odit unde repellendus sed, voluptates numquam.</p>
+                        </li>
+                        <li class="teachers__item">
+                            <div class="teachers__item-photo"></div>
+                            <h3 class="teachers__item-name">Тин-Тин</h3>
+                            <p class="teachers__item-desc">Носитель китайского языка</p>
+                            <p class="teachers__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur
+                                officiis
+                                eum vel ipsum odit unde repellendus sed, voluptates numquam.</p>
+                        </li>
+                    </ul>
+                    
+                    <button type="button" class="teachers__content-control-button teachers__content-control-button_right">
+                        <span class="visually-hidden">Вперед</span>
+                        <div class="teachers__content-control-button-right-triangle"></div>
+                    </button>
+                </div>
+                
             </div>
         </section>
 
@@ -1069,7 +1091,7 @@
                 <ul class="learning__list">
                     <li class="learning__item shadow">
                         <div class="learning__item-features">
-                            <img src="/img/learning/couple-icon.png" alt="icon" class="learning__item-features-icon">
+                            <img src="./img/learning/couple-icon.png" alt="icon" class="learning__item-features-icon">
                             <h3 class="learning__item-features-title">
                                 2 преподавателя:
                                 <span class="learning__item-features-title-color1">Русский</span>
@@ -1081,7 +1103,7 @@
                     </li>
                     <li class="learning__item shadow">
                         <div class="learning__item-features">
-                            <img src="/img/learning/replic-icon.png" alt="icon" class="learning__item-features-icon">
+                            <img src="./img/learning/replic-icon.png" alt="icon" class="learning__item-features-icon">
                             <h3 class="learning__item-features-title">
                                 <span class="learning__item-features-title-color1">Работа</span>
                                 над проектом
@@ -1093,7 +1115,7 @@
                     </li>
                     <li class="learning__item shadow">
                         <div class="learning__item-features">
-                            <img src="/img/learning/done-icon.png" alt="icon" class="learning__item-features-icon">
+                            <img src="./img/learning/done-icon.png" alt="icon" class="learning__item-features-icon">
                             <h3 class="learning__item-features-title">
                                 <span class="learning__item-features-title-color1">Соответствие</span>
                                 требованиям к
@@ -1106,7 +1128,7 @@
                     </li>
                     <li class="learning__item shadow">
                         <div class="learning__item-features">
-                            <img src="/img/learning/snowflake-icon.png" alt="icon" class="learning__item-features-icon">
+                            <img src="./img/learning/snowflake-icon.png" alt="icon" class="learning__item-features-icon">
                             <h3 class="learning__item-features-title">
                                 <span class="learning__item-features-title-color2">Нет пропускам!</span>
                                 <span class="learning__item-features-title-color1">Заморозка занятий</span>
@@ -1119,7 +1141,7 @@
                     </li>
                     <li class="learning__item shadow">
                         <div class="learning__item-features">
-                            <img src="/img/learning/check-list-icon.png" alt="icon" class="learning__item-features-icon">
+                            <img src="./img/learning/check-list-icon.png" alt="icon" class="learning__item-features-icon">
                             <h3 class="learning__item-features-title">
                                 <span class="learning__item-features-title-color2">Пробный</span>
                                 HSK в
@@ -1133,7 +1155,7 @@
                     </li>
                     <li class="learning__item shadow">
                         <div class="learning__item-features">
-                            <img src="/img/learning/diploma-icon.png" alt="icon" class="learning__item-features-icon">
+                            <img src="./img/learning/diploma-icon.png" alt="icon" class="learning__item-features-icon">
                             <h3 class="learning__item-features-title">
                                 <span class="learning__item-features-title-color1">Сертификат гос. образца по окончании</span>
                                 <span class="learning__item-features-title-color2"></span>
@@ -1189,81 +1211,105 @@
                     <li class="feedback__item">
                         <div class="feedback__item-desc">
                             <div class="feedback__item-desc-icon">
-                                <img src="/img/feedback/pencil-icon.png" alt="icon" class="feedback__item-desc-icon-pencil">
+                                <img src="./img/feedback/pencil-icon.png" alt="icon" class="feedback__item-desc-icon-pencil">
                             </div>
                             <div class="feedback__item-desc-student">
                                 <p class="feedback__item-desc-student-name">Марина</p>
                                 <p class="feedback__item-desc-student-date">24.07.2023</p>
                             </div>
                         </div>
-                        <ul class="feedback__item-score">
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                        </ul>
-                        <p class="feedback__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur id reiciendis ipsa iure illo autem doloribus cum soluta necessitatibus!</p>
+                        <div class="feedback__item-content">
+                            <ul class="feedback__item-content-score">
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                            </ul>
+                            <p class="feedback__item-content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur id reiciendis ipsa
+                                iure illo autem doloribus cum soluta necessitatibus!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, laboriosam nam pariatur nostrum eaque illum est
+                                iure, sed nesciunt, eos quidem adipisci cupiditate vero dolorum! Et quisquam mollitia quia doloribus!
+                            </p>
+                        </div>
                     </li>
                     <li class="feedback__item">
                         <div class="feedback__item-desc">
                             <div class="feedback__item-desc-icon">
-                                <img src="/img/feedback/pencil-icon.png" alt="icon" class="feedback__item-desc-icon-pencil">
+                                <img src="./img/feedback/pencil-icon.png" alt="icon" class="feedback__item-desc-icon-pencil">
                             </div>
                             <div class="feedback__item-desc-student">
                                 <p class="feedback__item-desc-student-name">Марина</p>
                                 <p class="feedback__item-desc-student-date">24.07.2023</p>
                             </div>
                         </div>
-                        <ul class="feedback__item-score">
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                        </ul>
-                        <p class="feedback__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur id reiciendis ipsa
-                            iure illo autem doloribus cum soluta necessitatibus!</p>
+                        <div class="feedback__item-content">
+                            <ul class="feedback__item-content-score">
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                            </ul>
+                            <p class="feedback__item-content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur id
+                                reiciendis ipsa
+                                iure illo autem doloribus cum soluta necessitatibus!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, laboriosam nam pariatur nostrum eaque illum est
+                                iure, sed nesciunt, eos quidem adipisci cupiditate vero dolorum! Et quisquam mollitia quia doloribus!
+                            </p>
+                        </div>
                     </li>
                     <li class="feedback__item">
                         <div class="feedback__item-desc">
                             <div class="feedback__item-desc-icon">
-                                <img src="/img/feedback/pencil-icon.png" alt="icon" class="feedback__item-desc-icon-pencil">
+                                <img src="./img/feedback/pencil-icon.png" alt="icon" class="feedback__item-desc-icon-pencil">
                             </div>
                             <div class="feedback__item-desc-student">
                                 <p class="feedback__item-desc-student-name">Марина</p>
                                 <p class="feedback__item-desc-student-date">24.07.2023</p>
                             </div>
                         </div>
-                        <ul class="feedback__item-score">
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                        </ul>
-                        <p class="feedback__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur id reiciendis ipsa
-                            iure illo autem doloribus cum soluta necessitatibus!</p>
+                        <div class="feedback__item-content">
+                            <ul class="feedback__item-content-score">
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                            </ul>
+                            <p class="feedback__item-content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur id
+                                reiciendis ipsa
+                                iure illo autem doloribus cum soluta necessitatibus!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, laboriosam nam pariatur nostrum eaque illum est
+                                iure, sed nesciunt, eos quidem adipisci cupiditate vero dolorum! Et quisquam mollitia quia doloribus!
+                            </p>
+                        </div>
                     </li>
                     <li class="feedback__item">
                         <div class="feedback__item-desc">
                             <div class="feedback__item-desc-icon">
-                                <img src="/img/feedback/pencil-icon.png" alt="icon" class="feedback__item-desc-icon-pencil">
+                                <img src="./img/feedback/pencil-icon.png" alt="icon" class="feedback__item-desc-icon-pencil">
                             </div>
                             <div class="feedback__item-desc-student">
                                 <p class="feedback__item-desc-student-name">Марина</p>
                                 <p class="feedback__item-desc-student-date">24.07.2023</p>
                             </div>
                         </div>
-                        <ul class="feedback__item-score">
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                            <li class="feedback__item-score-item"></li>
-                        </ul>
-                        <p class="feedback__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur id reiciendis ipsa
-                            iure illo autem doloribus cum soluta necessitatibus!</p>
+                        <div class="feedback__item-content">
+                            <ul class="feedback__item-content-score">
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                                <li class="feedback__item-content-score-item"></li>
+                            </ul>
+                            <p class="feedback__item-content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur id
+                                reiciendis ipsa
+                                iure illo autem doloribus cum soluta necessitatibus!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, laboriosam nam pariatur nostrum eaque illum est
+                                iure, sed nesciunt, eos quidem adipisci cupiditate vero dolorum! Et quisquam mollitia quia doloribus!
+                            </p>
+                        </div>
                     </li>
                 </ul>
                 <ul class="feedback__pagination">
@@ -1291,10 +1337,18 @@
                     </div>
                 </h2>
                 <ul class="lessons__list">
-                    <li class="lessons__item"></li>
-                    <li class="lessons__item"></li>
-                    <li class="lessons__item"></li>
-                    <li class="lessons__item"></li>
+                    <li class="lessons__item">
+                        <div class="lessons__item-box"></div>
+                    </li>
+                    <li class="lessons__item">
+                        <div class="lessons__item-box"></div>
+                    </li>
+                    <li class="lessons__item">
+                        <div class="lessons__item-box"></div>
+                    </li>
+                    <li class="lessons__item">
+                        <div class="lessons__item-box"></div>
+                    </li>
                 </ul>
             </div>
         </section>

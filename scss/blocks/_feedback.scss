@@ -10,14 +10,22 @@
 .feedback__list {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+        overflow-x: scroll;
+    }
 }
 
 .feedback__item {
     width: 245px;
-    min-height: 245px;
+    height: 245px;
     padding: 20px;
     border: 2px solid $background-grey;
     border-radius: 15px;
+
+    @include tablet {
+        margin: 0 25px 30px 0;
+    }
 }
 
 .feedback__item-desc {
@@ -30,7 +38,7 @@
     height: 43px;
     margin: 0 10px 0 0;
     position: relative;
-    background: url(/img/feedback/message-icon.png);
+    background: url(../img/feedback/message-icon.png);
 }
 
 .feedback__item-desc-icon-pencil {
@@ -39,7 +47,6 @@
     position: absolute;
     top: 9px;
     left: 12px;
-
 }
 
 .feedback__item-desc-student {
@@ -55,30 +62,39 @@
     font-weight: 500;
 }
 
-.feedback__item-score {
+.feedback__item-content {
+    height: 190px;
+    overflow-y: scroll;
+}
+
+.feedback__item-content-score {
     display: flex;
     margin: 0 0 20px 0;
 }
 
-.feedback__item-score-item {
+.feedback__item-content-score-item {
     width: 20px;
     height: 20px;
     margin: 0 5px 0 0;
-    background: url(/img/feedback/grey-star-icon.png);
+    background: url(../img/feedback/grey-star-icon.png);
 }
 
-.feedback__item-score-item:hover {
-    background: url(/img/feedback/gold-star-icon.png);
+.feedback__item-content-score-item:hover {
+    background: url(../img/feedback/gold-star-icon.png);
 }
 
-.feedback__item-text {
+.feedback__item-content-text {
     line-height: 150%;
 }
 
 .feedback__pagination {
-    margin: 20px 0 80px 0;
+    margin: 20px 0 0 0;
     display: flex;
     justify-content: center;
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .feedback__pagination-item {

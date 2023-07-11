@@ -158,6 +158,13 @@ body {
 .container {
   width: 1248px;
   margin: 0 auto;
+  /*background: red;*/
+}
+@media (max-width: 768px) {
+  .container {
+    width: 720px;
+    /*background: red;*/
+  }
 }
 
 .input-box {
@@ -216,8 +223,22 @@ button {
 .advantages {
   width: 100%;
   min-height: 450px;
-  background: url(/img/advantages/people.png);
+  background: url(../img/advantages/people.png);
   background-size: cover;
+}
+
+.advantages__title {
+  display: none;
+}
+@media (max-width: 768px) {
+  .advantages__title {
+    display: block;
+    padding: 50px 0 50px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+  }
 }
 
 .advantages__content {
@@ -226,12 +247,20 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .advantages__content {
+    flex-direction: column-reverse;
+  }
+}
 
 .advantages__features {
   width: 848px;
   min-height: 346px;
-  display: flex;
-  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .advantages__features {
+    width: 720px;
+  }
 }
 
 .advantages__features-title {
@@ -239,6 +268,11 @@ button {
   font-size: 36px;
   line-height: 44px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .advantages__features-title {
+    display: none;
+  }
 }
 
 .advantages__features-list {
@@ -252,6 +286,12 @@ button {
   margin: 60px 25px 0 25px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .advantages__features-item {
+    width: 330px;
+    margin: 60px 0 0 0;
+  }
 }
 
 .advantages__features-icon {
@@ -294,11 +334,6 @@ button {
 .advantages__sign-up-form-button {
   width: 340px;
   border: #F43131;
-  /*border-radius: 10px;
-  padding: 10px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;*/
   background: #F43131;
   color: #FFFFFF;
 }
@@ -314,11 +349,23 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .container_application {
+    display: block;
+    text-align: center;
+    padding: 0 0 40px 0;
+  }
+}
 
 .application {
   min-height: 165px;
   margin: 0 0 75px 0;
   background: #DAECFF;
+}
+@media (max-width: 768px) {
+  .application {
+    margin: 75px 0 75px 0;
+  }
 }
 
 .application__content {
@@ -357,13 +404,18 @@ button {
   font-size: 36px;
   line-height: 44px;
   text-align: left;
-  margin: 0 0 40px 0;
+  margin: 80px 0 40px 0;
 }
 
 .catalog__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .catalog__list {
+    justify-content: center;
+  }
 }
 
 .catalog__item {
@@ -507,17 +559,43 @@ button {
 
 /*Описание*/
 .desc__wrap {
-  margin: 80px 0 80px 0;
+  margin: 80px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
 
 .desc__content {
   width: 670px;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .desc__content {
+    width: 330px;
+    height: 310px;
+    overflow: hidden;
+    position: relative;
+  }
 }
 
 .desc__content-text {
   margin: 0 0 20px 0;
+}
+
+.desc__content-full {
+  display: none;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .desc__content-full {
+    display: block;
+    text-decoration: underline;
+    color: #0072DE;
+  }
+}
+
+.desc__content-full:hover {
+  color: #F43131;
+  cursor: pointer;
 }
 
 .desc__video {
@@ -528,6 +606,28 @@ button {
   width: 470px;
   height: 300px;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .desc__video-content {
+    width: 360px;
+  }
+}
+
+.desc__full {
+  display: none;
+  margin: 15px 0 0 0;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .desc__full {
+    display: block;
+    text-decoration: underline;
+    color: #0072DE;
+  }
+}
+
+.desc__full:hover {
+  color: #F43131;
 }
 
 /*Отзывы учеников*/
@@ -542,13 +642,23 @@ button {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .feedback__list {
+    overflow-x: scroll;
+  }
+}
 
 .feedback__item {
   width: 245px;
-  min-height: 245px;
+  height: 245px;
   padding: 20px;
   border: 2px solid #C0C0C0;
   border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .feedback__item {
+    margin: 0 25px 30px 0;
+  }
 }
 
 .feedback__item-desc {
@@ -561,7 +671,7 @@ button {
   height: 43px;
   margin: 0 10px 0 0;
   position: relative;
-  background: url(/img/feedback/message-icon.png);
+  background: url(../img/feedback/message-icon.png);
 }
 
 .feedback__item-desc-icon-pencil {
@@ -585,30 +695,40 @@ button {
   font-weight: 500;
 }
 
-.feedback__item-score {
+.feedback__item-content {
+  height: 190px;
+  overflow-y: scroll;
+}
+
+.feedback__item-content-score {
   display: flex;
   margin: 0 0 20px 0;
 }
 
-.feedback__item-score-item {
+.feedback__item-content-score-item {
   width: 20px;
   height: 20px;
   margin: 0 5px 0 0;
-  background: url(/img/feedback/grey-star-icon.png);
+  background: url(../img/feedback/grey-star-icon.png);
 }
 
-.feedback__item-score-item:hover {
-  background: url(/img/feedback/gold-star-icon.png);
+.feedback__item-content-score-item:hover {
+  background: url(../img/feedback/gold-star-icon.png);
 }
 
-.feedback__item-text {
+.feedback__item-content-text {
   line-height: 150%;
 }
 
 .feedback__pagination {
-  margin: 20px 0 80px 0;
+  margin: 20px 0 0 0;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .feedback__pagination {
+    display: none;
+  }
 }
 
 .feedback__pagination-item {
@@ -649,7 +769,11 @@ button {
 .formats__list {
   display: flex;
   justify-content: space-between;
-  /*flex-wrap: wrap;*/
+}
+@media (max-width: 768px) {
+  .formats__list {
+    display: block;
+  }
 }
 
 .formats__item {
@@ -658,6 +782,11 @@ button {
   padding: 20px;
   background: #FFFFFF;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .formats__item {
+    margin: 30px auto;
+  }
 }
 
 .formats__item-title {
@@ -762,7 +891,6 @@ button {
 .formats__item-control {
   display: flex;
   justify-content: space-between;
-  /*margin: 50px 0 0 0;*/
 }
 
 .formats__item-control-item-btn {
@@ -784,59 +912,39 @@ button {
   color: #0072DE;
 }
 
-/*Курсы языков*/
 .header-content {
   min-height: 140px;
   display: flex;
+  justify-content: space-between;
+}
+
+.header-content__picture-logo {
+  width: 300px;
+  height: 80px;
+  background: url(../../img/header/logo-orig.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .header-content__picture-logo {
+    width: 275px;
+    height: 70px;
+  }
 }
 
 .header-content__picture {
-  width: 624px;
   display: flex;
   align-items: center;
 }
 
-.header-content__picture-logo {
-  width: 90px;
-  height: 90px;
-  margin: 5px;
-}
-
-.header-content__title {
-  text-align: center;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 44px;
-  text-transform: uppercase;
-}
-
-.header-content__title-eur {
-  letter-spacing: 0.1em;
-}
-
-.header-content__title-lang {
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 19px;
-  letter-spacing: 0.4em;
-  color: #7C7C7C;
-}
-
-.header-content__title-eur-let-e {
-  font-size: 50px;
-  line-height: 19px;
-  color: #0072DE;
-}
-
-.header-content__title-eur-let-a {
-  font-size: 50px;
-  line-height: 19px;
-  color: #F43131;
-}
-
 .header-content__picture-drop-down {
   margin: 0 0 0 20px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header-content__picture-drop-down {
+    display: none;
+  }
 }
 
 .header-content__picture-drop-down-text {
@@ -846,6 +954,7 @@ button {
 }
 
 .header-content__picture-drop-down-text:hover {
+  cursor: pointer;
   display: inline-block;
   color: #F43131;
   text-decoration: underline;
@@ -865,10 +974,9 @@ button {
   width: 150px;
   min-height: 100px;
   padding: 5px;
-  /*display: block;*/
   display: none;
   position: absolute;
-  /*box-shadow: 4px 4px 20px rgba(21, 78, 132, 0.1);*/
+  top: 25px;
   border-radius: 10px;
   background: #FFFFFF;
 }
@@ -888,64 +996,70 @@ button {
   color: #222222;
 }
 
-.header-contacts {
+.header-content__contacts {
   width: 624px;
   padding: 20px 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .header-content__contacts {
+    display: none;
+  }
+}
 
-.header-contacts__menu {
+.header-content__menu {
   display: inline-block;
 }
 
-.header-contacts__menu-list {
+.header-content__menu-list {
   width: 600px;
   display: flex;
   justify-content: space-around;
 }
 
-.header-contacts__menu-link {
+.header-content__menu-link {
   text-decoration: none;
   color: #7C7C7C;
   font-weight: bolder;
   font-size: 14px;
 }
 
-.header-contacts__menu-link:hover {
+.header-content__menu-link:hover {
   text-decoration: underline;
   color: #222222;
 }
 
-.header-contacts__search {
+.header-content__search {
   display: inline-block;
   width: 15px;
   height: 15px;
+  border: 1px solid #FFFFFF;
 }
 
-.header-contacts__search:hover {
-  background: #7C7C7C;
+.header-content__search:hover {
+  border: 1px solid #7C7C7C;
 }
 
-.header-contacts__content {
+.header-content__call {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-contacts__content-phone {
+.header-content__call-phone {
   color: #222222;
   font-weight: bolder;
 }
 
-.header-contacts__content-socials {
+.header-content__call-socials {
   width: 130px;
   display: flex;
   justify-content: space-between;
 }
 
-.header-contacts__content-btn {
+.header-content__call-btn {
   background: #FFFFFF;
   color: #F43131;
   width: 220px;
@@ -953,19 +1067,69 @@ button {
   border: 1px solid #F43131;
 }
 
-.header-contacts__content-btn:hover {
+.header-content__call-btn:hover {
   color: #0072DE;
   border: 1px solid #0072DE;
 }
 
-/*.header-contacts__content-btn-text {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-}*/
+.header-content__burger {
+  display: none;
+  position: relative;
+  border: 1px solid #FFFFFF;
+}
+@media (max-width: 768px) {
+  .header-content__burger {
+    display: block;
+    width: 48px;
+    height: 48px;
+    align-self: center;
+    background: url(../img/header/icon-park-outline_hamburger-button.png);
+  }
+}
+
+.header-content__burger:hover {
+  border: 1px solid #F43131;
+}
+
+.header-content__burger:hover .header-content__burger-navbar {
+  display: block;
+}
+
+.header-content__burger-navbar {
+  width: 150px;
+  min-height: 100px;
+  padding: 5px;
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0px;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+
+.header-content__burger:hover .header-content__burger-navbar {
+  display: block;
+}
+
+.header-content__burger-navbar-link {
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  color: #7C7C7C;
+}
+
+.header-content__burger-navbar-link:hover {
+  color: #222222;
+}
+
 .header-nav__menu-list {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .header-nav__menu-list {
+    display: none;
+  }
 }
 
 .header-nav__menu-item {
@@ -999,6 +1163,11 @@ button {
 .header-nav__pagination {
   display: flex;
   margin: 30px 0 30px 0;
+}
+@media (max-width: 768px) {
+  .header-nav__pagination {
+    margin: 0 0 20px 0;
+  }
 }
 
 .header-nav__pagination-link {
@@ -1042,6 +1211,12 @@ button {
   border-radius: 10px;
   background: #FFFFFF;
 }
+@media (max-width: 768px) {
+  .learning__item {
+    width: 330px;
+    padding: 10px;
+  }
+}
 
 .learning__item-features {
   min-height: 80px;
@@ -1074,7 +1249,7 @@ button {
 
 /*Видео занятий*/
 .lessons__title {
-  margin: 0 0 50px 0;
+  margin: 80px 0 50px 0;
   display: flex;
   justify-content: space-between;
   font-weight: 700;
@@ -1088,29 +1263,28 @@ button {
   align-items: center;
   width: 70px;
 }
+@media (max-width: 768px) {
+  .lessons__title-control {
+    display: none;
+  }
+}
 
 .lessons__title-control-button {
   width: 30px;
   height: 30px;
   background: #0072DE;
   border: 1px solid #0072DE;
-  border-radius: 60px;
+  border-radius: 50%;
 }
 
 .lessons__title-control-button_left {
-  width: 30px;
-  height: 30px;
   background: #C0C0C0;
   border: 1px solid #C0C0C0;
-  border-radius: 50%;
 }
 
 .lessons__title-control-button_right {
-  width: 30px;
-  height: 30px;
   background: #00BFFF;
   border: 1px solid #00BFFF;
-  border-radius: 50%;
 }
 
 .lessons__title-control-button_right:hover {
@@ -1133,9 +1307,18 @@ button {
 .lessons__list {
   display: flex;
   justify-content: space-between;
+  margin: 0 0 30px 0;
+}
+@media (max-width: 768px) {
+  .lessons__list {
+    overflow-x: scroll;
+  }
 }
 
-.lessons__item {
+/*.lessons__item {
+
+}*/
+.lessons__item-box {
   width: 270px;
   min-height: 200px;
   margin: 0 0 40px 0;
@@ -1143,15 +1326,26 @@ button {
   border: 2px solid #696969;
   border-radius: 15px;
 }
+@media (max-width: 768px) {
+  .lessons__item-box {
+    margin: 0 30px 35px 0;
+  }
+}
 
 /*Результат*/
 .result {
-  /*width: 1650px;*/
   min-height: 700px;
-  /*padding: 100px 0 0 0;*/
-  background: url(/img/result/arrow.png);
+  background: url(../../img/result/vector.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .result {
+    background: url(../../img/result/vector-tablet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .result__title {
@@ -1169,7 +1363,7 @@ button {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  background: url(/img/result/sertificate.jpg);
+  background: url(../img/result/sertificate.jpg);
   background-size: contain;
 }
 
@@ -1199,8 +1393,13 @@ button {
 }
 
 .result__item_1 {
-  top: 65px;
+  top: 60px;
   left: 65px;
+}
+@media (max-width: 768px) {
+  .result__item_1 {
+    left: 100px;
+  }
 }
 
 .result__item_2 {
@@ -1211,10 +1410,20 @@ button {
   top: 235px;
   left: -370px;
 }
+@media (max-width: 768px) {
+  .result__item_2 {
+    left: -345px;
+  }
+}
 
 .result__item_3 {
   top: 315px;
   left: 80px;
+}
+@media (max-width: 768px) {
+  .result__item_3 {
+    left: -5px;
+  }
 }
 
 .result__item-box {
@@ -1247,6 +1456,15 @@ button {
 }
 
 /*Расписание и цены*/
+.shedule {
+  display: block;
+}
+@media (max-width: 768px) {
+  .shedule {
+    display: none;
+  }
+}
+
 .container_shedule {
   min-height: 400px;
   margin: 50px auto;
@@ -1340,7 +1558,6 @@ button {
   min-height: 100px;
   padding: 5px 1px 0 10px;
   text-align: left;
-  /*display: block;*/
   display: none;
   position: absolute;
   border-radius: 10px;
@@ -1474,7 +1691,6 @@ button {
 .shedule__catalog-item-control-item-button {
   width: 150px;
   margin: 0 0 15px 0;
-  border-radius: 5px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -1535,9 +1751,10 @@ button {
 /*Летняя стажировка*/
 .container_summer {
   border-radius: 20px;
-  background: url(/img/summer/hey-girl.png);
+  background: url(../img/summer/hey-girl.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .summer {
@@ -1607,29 +1824,28 @@ button {
   align-items: center;
   width: 70px;
 }
+@media (max-width: 768px) {
+  .teachers__title-control {
+    display: none;
+  }
+}
 
 .teachers__title-control-button {
   width: 30px;
   height: 30px;
   background: #0072DE;
   border: 1px solid #0072DE;
-  border-radius: 60px;
+  border-radius: 50%;
 }
 
 .teachers__title-control-button_left {
-  width: 30px;
-  height: 30px;
   background: #C0C0C0;
   border: 1px solid #C0C0C0;
-  border-radius: 50%;
 }
 
 .teachers__title-control-button_right {
-  width: 30px;
-  height: 30px;
   background: #00BFFF;
   border: 1px solid #00BFFF;
-  border-radius: 50%;
 }
 
 .teachers__title-control-button_right:hover {
@@ -1649,14 +1865,27 @@ button {
   border-left: 15px solid #FFFFFF;
 }
 
+@media (max-width: 768px) {
+  .teachers__content {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .teachers__list {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .teachers__list {
+    flex-wrap: wrap;
+  }
+}
 
 .teachers__item {
   width: 300px;
+  margin: 0 0 50px 0;
 }
 
 .teachers__item-photo {
@@ -1688,6 +1917,63 @@ button {
   color: #7C7C7C;
 }
 
+/*Кнопки tablet*/
+.teachers__content-control-button {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background: #0072DE;
+  border: 1px solid #0072DE;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .teachers__content-control-button {
+    display: block;
+  }
+}
+
+.teachers__content-control-button_left {
+  display: none;
+  background: #C0C0C0;
+  border: 1px solid #C0C0C0;
+}
+@media (max-width: 768px) {
+  .teachers__content-control-button_left {
+    display: block;
+  }
+}
+
+.teachers__content-control-button_right {
+  display: none;
+  background: #00BFFF;
+  border: 1px solid #00BFFF;
+}
+@media (max-width: 768px) {
+  .teachers__content-control-button_right {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .teachers__content-control-button_right:hover {
+    display: block;
+    background: #0072DE;
+    border: 1px solid #0072DE;
+  }
+}
+
+.teachers__content-control-button-left-triangle {
+  border: 10px solid transparent;
+  margin: -5px 0 0 -15px;
+  border-right: 15px solid #FFFFFF;
+}
+
+.teachers__content-control-button-right-triangle {
+  border: 10px solid transparent;
+  margin: -5px 0 0 -1px;
+  border-left: 15px solid #FFFFFF;
+}
+
 /*Пробный урок*/
 .container_trial {
   position: relative;
@@ -1696,7 +1982,6 @@ button {
 .input-box_trial {
   width: 275px;
   padding: 10px 0 10px 20px;
-  /*margin: 0 10px 0 0;*/
 }
 
 .trial {
@@ -1724,12 +2009,18 @@ button {
   flex-wrap: wrap;
   position: absolute;
   top: 200px;
-  right: 0px;
+  right: 10px;
   width: 615px;
   min-height: 215px;
   padding: 25px;
   border-radius: 20px;
   background: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .trial__sign-up-form {
+    position: static;
+    margin: 0 auto;
+  }
 }
 
 .trial__sign-up-form-button {
@@ -1747,7 +2038,6 @@ button {
 .trial__list {
   position: absolute;
   top: 0px;
-  /*bottom: 0px;*/
 }
 
 .trial__item {

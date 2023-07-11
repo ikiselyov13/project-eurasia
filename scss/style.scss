@@ -1,7 +1,7 @@
 @import './reset';
 @import './variables';
-@import './general';
 @import './mixins';
+@import './general';
 
 @import './blocks/advantages';
 @import './blocks/application';
@@ -9,7 +9,8 @@
 @import './blocks/desc';
 @import './blocks/feedback';
 @import './blocks/formats';
-@import './blocks/header';
+@import './blocks/header-content';
+@import './blocks/header-nav';
 @import './blocks/learning';
 @import './blocks/lessons';
 @import './blocks/result';

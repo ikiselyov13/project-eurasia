@@ -9,13 +9,17 @@
     font-size: 36px;
     line-height: 44px;
     text-align: left;
-    margin: 0 0 40px 0;
+    margin: 80px 0 40px 0;
 }
 
 .catalog__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include tablet {
+        justify-content: center;
+    }
 }
 
 .catalog__item {

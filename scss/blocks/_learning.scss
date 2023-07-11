@@ -25,6 +25,11 @@
     padding: 20px;
     border-radius: 10px;
     background: $background-general;
+
+    @include tablet {
+        width: 330px;
+        padding: 10px;
+    }
 }
 
 .learning__item-features {

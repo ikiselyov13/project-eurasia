@@ -22,6 +22,12 @@ body {
 .container {
     width: 1248px;
     margin: 0 auto;
+    /*background: red;*/
+
+    @include tablet {
+        width: 720px;
+        /*background: red;*/
+    }
 }
 
 .input-box {

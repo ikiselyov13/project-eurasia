@@ -1,17 +1,41 @@
 /*Описание*/
 
 .desc__wrap {
-    margin: 80px 0 80px 0;
+    margin: 80px 0 0 0;
     display: flex;
     justify-content: space-between;
 }
 
 .desc__content {
     width: 670px;
+    line-height: 150%;
+
+    @include tablet {
+        width: 330px;
+        height: 310px;
+        overflow: hidden;
+        position: relative;
+    }
 }
 
 .desc__content-text {
     margin: 0 0 20px 0;
+}
+
+.desc__content-full {
+    display: none;
+    position: absolute;
+
+    @include tablet {
+        display: block;
+        text-decoration: underline;
+        color: $general-blue;
+    }
+}
+
+.desc__content-full:hover {
+    color: $general-red;
+    cursor: pointer;
 }
 
 .desc__video {
@@ -22,4 +46,24 @@
     width: 470px;
     height: 300px;
     border-radius: 10px;
+
+    @include tablet {
+        width: 360px;
+    }
+}
+
+.desc__full {
+    display: none;
+    margin: 15px 0 0 0;
+    position: absolute;
+
+    @include tablet {
+        display: block;
+        text-decoration: underline;
+        color: $general-blue;
+    }
+}
+
+.desc__full:hover {
+    color: $general-red;
 }

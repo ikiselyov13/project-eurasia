@@ -1,7 +1,7 @@
 /*Видео занятий*/
 
 .lessons__title {
-    margin: 0 0 50px 0;
+    margin: 80px 0 50px 0;
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -10,34 +10,23 @@
 }
 
 .lessons__title-control {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70px;
+    @include control;
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .lessons__title-control-button {
-    width: 30px;
-    height: 30px;
-    background: $general-blue;
-    border: 1px solid $general-blue;
-    border-radius: 60px;
+    @include control-button;
 }
 
 .lessons__title-control-button_left {
-    width: 30px;
-    height: 30px;
-    background: $background-grey;
-    border: 1px solid $background-grey;
-    border-radius: 50%;
+    @include control-button-left;
 }
 
 .lessons__title-control-button_right {
-    width: 30px;
-    height: 30px;
-    background: $background-sky;
-    border: 1px solid $background-sky;
-    border-radius: 50%;
+    @include control-button-right;
 }
 
 .lessons__title-control-button_right:hover {
@@ -46,27 +35,37 @@
 }
 
 .lessons__title-control-button-left-triangle {
-    border: 10px solid transparent;
-    margin: -5px 0 0 -15px;
-    border-right: 15px solid $background-general;
+    @include control-button-left-triangle;
 }
 
 .lessons__title-control-button-right-triangle {
-    border: 10px solid transparent;
-    margin: -5px 0 0 -1px;
-    border-left: 15px solid $background-general;
+    @include control-button-right-triangle;
 }
 
 .lessons__list {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 30px 0;
+
+    @include tablet {
+        overflow-x: scroll;
+    }
 }
 
-.lessons__item {
+/*.lessons__item {
+    
+}*/
+
+.lessons__item-box {
     width: 270px;
     min-height: 200px;
     margin: 0 0 40px 0;
     background: $background-deep-grey;
     border: 2px solid $background-deep-grey;
     border-radius: 15px;
+
+    @include tablet {
+        margin: 0 30px 35px 0;
+        ;
+    }
 }

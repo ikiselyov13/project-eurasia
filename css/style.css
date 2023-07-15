@@ -158,12 +158,18 @@ body {
 .container {
   width: 1248px;
   margin: 0 auto;
-  /*background: red;*/
 }
 @media (max-width: 768px) {
   .container {
     width: 720px;
-    /*background: red;*/
+    background: aqua;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 280px;
+    background: red;
+    margin: 0 10px;
   }
 }
 
@@ -190,8 +196,9 @@ button {
 }
 
 .form-agreement {
-  display: inline-block;
-  margin: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -215,16 +222,48 @@ button {
   margin: 0 auto;
   width: 316px;
 }
+@media (max-width: 320px) {
+  .input-box_advantages_name {
+    width: 230px;
+  }
+}
 
 .input-box_advantages_contacts {
   width: 140px;
+}
+@media (max-width: 320px) {
+  .input-box_advantages_contacts {
+    width: 230px;
+    margin: 0 0 10px 0;
+  }
 }
 
 .advantages {
   width: 100%;
   min-height: 450px;
-  background: url(../img/advantages/people.png);
+  background: url(../../img/advantages/group-desctop.png);
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .advantages {
+    background: url(../../img/advantages/group-tablet.png);
+    background-size: cover;
+  }
+}
+@media (max-width: 320px) {
+  .advantages {
+    background: url(../../img/advantages/group-mobile.png);
+    background-size: cover;
+  }
+}
+
+.advantages__bkg {
+  background: rgba(251, 250, 250, 0.3);
+}
+@media (max-width: 320px) {
+  .advantages__bkg {
+    background: rgba(251, 250, 250, 0.4);
+  }
 }
 
 .advantages__title {
@@ -238,6 +277,14 @@ button {
     font-size: 36px;
     line-height: 44px;
     text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .advantages__title {
+    padding: 20px 0 20px 0;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -254,13 +301,7 @@ button {
 }
 
 .advantages__features {
-  width: 848px;
   min-height: 346px;
-}
-@media (max-width: 768px) {
-  .advantages__features {
-    width: 720px;
-  }
 }
 
 .advantages__features-title {
@@ -280,6 +321,11 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .advantages__features-list {
+    margin: 0 0 30px 0;
+  }
+}
 
 .advantages__features-item {
   width: 362px;
@@ -291,6 +337,12 @@ button {
   .advantages__features-item {
     width: 330px;
     margin: 60px 0 0 0;
+  }
+}
+@media (max-width: 320px) {
+  .advantages__features-item {
+    width: 280px;
+    margin: 25px 0 0 0;
   }
 }
 
@@ -305,13 +357,36 @@ button {
   font-size: 18px;
   line-height: 22px;
 }
+@media (max-width: 320px) {
+  .advantages__features-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .advantages__features-text-color1 {
+    color: #0072DE;
+  }
+}
+
+@media (max-width: 320px) {
+  .advantages__features-text-color2 {
+    color: #F43131;
+  }
+}
 
 .advantages__sign-up {
   width: 340px;
-  height: 346px;
+  min-height: 360px;
   padding: 20px 30px 20px 30px;
   background: #FFFFFF;
   border-radius: 20px;
+}
+@media (max-width: 320px) {
+  .advantages__sign-up {
+    width: 250px;
+    padding: 15px;
+  }
 }
 
 .advantages__sign-up-title {
@@ -319,6 +394,13 @@ button {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
+}
+@media (max-width: 320px) {
+  .advantages__sign-up-title {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .advantages__sign-up-title-benefit {
@@ -330,6 +412,12 @@ button {
   justify-content: space-between;
   margin: 20px 0 20px 0;
 }
+@media (max-width: 320px) {
+  .advantages__sign-up-form-contacts {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+}
 
 .advantages__sign-up-form-button {
   width: 340px;
@@ -337,9 +425,23 @@ button {
   background: #F43131;
   color: #FFFFFF;
 }
+@media (max-width: 320px) {
+  .advantages__sign-up-form-button {
+    width: 251px;
+  }
+}
 
 .advantages__sign-up-form-button:hover {
   background: #0072DE;
+}
+
+.advantages__sign-up-form-agreement {
+  display: flex;
+  align-items: center;
+  /*@include mobile {
+      display: flex;
+      align-items: center;
+  }*/
 }
 
 /*Оставить заявку*/
@@ -420,7 +522,7 @@ button {
 
 .catalog__item {
   width: 570px;
-  min-height: 380px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -429,9 +531,24 @@ button {
   margin: 0 0 50px 0;
   padding: 10px;
 }
+@media (max-width: 320px) {
+  .catalog__item {
+    width: 260px;
+    height: 520px;
+    /*display: grid;
+    grid-template-rows: 200px 320px;
+    grid-template-columns: 50% 50%;*/
+  }
+}
 
 .catalog__item-content {
   display: flex;
+  height: 285px;
+}
+@media (max-width: 320px) {
+  .catalog__item-content {
+    display: block;
+  }
 }
 
 .catalog__item-content-pic {
@@ -562,18 +679,46 @@ button {
   margin: 80px 0 0 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .desc__wrap {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 320px) {
+  .desc__wrap {
+    flex-direction: column;
+  }
 }
 
 .desc__content {
   width: 670px;
   line-height: 150%;
+  min-height: 350px;
 }
 @media (max-width: 768px) {
   .desc__content {
     width: 330px;
-    height: 310px;
+    min-height: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .desc__content {
+    margin: 0 0 5px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .desc__list {
+    width: 330px;
+    height: 220px;
     overflow: hidden;
-    position: relative;
+  }
+}
+@media (max-width: 320px) {
+  .desc__list {
+    width: 280px;
   }
 }
 
@@ -583,13 +728,18 @@ button {
 
 .desc__content-full {
   display: none;
-  position: absolute;
 }
 @media (max-width: 768px) {
   .desc__content-full {
+    margin: 5px 0 0 0;
     display: block;
     text-decoration: underline;
     color: #0072DE;
+  }
+}
+@media (max-width: 320px) {
+  .desc__content-full {
+    margin: 5px 0 10px 0;
   }
 }
 
@@ -598,36 +748,28 @@ button {
   cursor: pointer;
 }
 
-.desc__video {
-  align-self: center;
+@media (max-width: 320px) {
+  .desc__video {
+    margin: 0 auto;
+  }
 }
 
 .desc__video-content {
-  width: 470px;
-  height: 300px;
+  display: block;
+  width: 500px;
+  height: 330px;
   border-radius: 10px;
 }
 @media (max-width: 768px) {
   .desc__video-content {
     width: 360px;
+    height: 230px;
   }
 }
-
-.desc__full {
-  display: none;
-  margin: 15px 0 0 0;
-  position: absolute;
-}
-@media (max-width: 768px) {
-  .desc__full {
-    display: block;
-    text-decoration: underline;
-    color: #0072DE;
+@media (max-width: 320px) {
+  .desc__video-content {
+    width: 280px;
   }
-}
-
-.desc__full:hover {
-  color: #F43131;
 }
 
 /*Отзывы учеников*/
@@ -778,7 +920,7 @@ button {
 
 .formats__item {
   width: 570px;
-  min-height: 260px;
+  height: 280px;
   padding: 20px;
   background: #FFFFFF;
   border-radius: 10px;
@@ -917,6 +1059,11 @@ button {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 320px) {
+  .header-content {
+    min-height: 90px;
+  }
+}
 
 .header-content__picture-logo {
   width: 300px;
@@ -929,6 +1076,12 @@ button {
   .header-content__picture-logo {
     width: 275px;
     height: 70px;
+  }
+}
+@media (max-width: 320px) {
+  .header-content__picture-logo {
+    width: 205px;
+    height: 50px;
   }
 }
 
@@ -1086,6 +1239,13 @@ button {
     background: url(../img/header/icon-park-outline_hamburger-button.png);
   }
 }
+@media (max-width: 320px) {
+  .header-content__burger {
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+  }
+}
 
 .header-content__burger:hover {
   border: 1px solid #F43131;
@@ -1167,6 +1327,11 @@ button {
 @media (max-width: 768px) {
   .header-nav__pagination {
     margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 320px) {
+  .header-nav__pagination {
+    display: none;
   }
 }
 
@@ -1596,7 +1761,7 @@ button {
 
 .shedule__catalog-item {
   width: 570px;
-  min-height: 180px;
+  height: 190px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -1981,6 +2146,7 @@ button {
 
 .input-box_trial {
   width: 275px;
+  margin: 0 0 15px 0;
   padding: 10px 0 10px 20px;
 }
 
@@ -2011,7 +2177,7 @@ button {
   top: 200px;
   right: 10px;
   width: 615px;
-  min-height: 215px;
+  min-height: 165px;
   padding: 25px;
   border-radius: 20px;
   background: #FFFFFF;

@@ -10,6 +10,17 @@
     }
 }
 
+@mixin button {
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $background-general;
+}
+
 @mixin control {
     display: flex;
     justify-content: space-between;

@@ -3,17 +3,44 @@
 .input-box_advantages_name {
     margin: 0 auto;
     width: 316px;
+
+    @include mobile {
+        width: 230px;
+    }
 }
 
 .input-box_advantages_contacts {
     width: 140px;
+
+    @include mobile {
+        width: 230px;
+        margin: 0 0 10px 0;
+    }
 }
 
 .advantages {
     width: 100%;
     min-height: 450px;
-    background: url(../img/advantages/people.png);
+    background: url(../../img/advantages/group-desctop.png);
     background-size: cover;
+
+    @include tablet {
+        background: url(../../img/advantages/group-tablet.png);
+        background-size: cover;
+    }
+
+    @include mobile {
+        background: url(../../img/advantages/group-mobile.png);
+        background-size: cover;
+    }
+}
+
+.advantages__bkg {
+    background: rgba(251, 250, 250, 0.3);
+
+    @include mobile {
+            background: rgba(251, 250, 250, 0.4);
+        }
 }
 
 .advantages__title {
@@ -28,6 +55,15 @@
         line-height: 44px;
         text-align: center;
     }
+
+    @include mobile {
+
+        padding: 20px 0 20px 0;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+
+    }
 }
 
 .advantages__content {
@@ -36,18 +72,14 @@
     justify-content: space-between;
     align-items: center;
 
+
     @include tablet {
         flex-direction: column-reverse;
     }
 }
 
 .advantages__features {
-    width: 848px;
     min-height: 346px;
-
-    @include tablet {
-        width: 720px;
-    }
 }
 
 .advantages__features-title {
@@ -65,6 +97,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include tablet {
+        margin: 0 0 30px 0;
+    }
 }
 
 .advantages__features-item {
@@ -76,6 +112,11 @@
     @include tablet {
         width: 330px;
         margin: 60px 0 0 0;
+    }
+
+    @include mobile {
+        width: 280px;
+        margin: 25px 0 0 0;
     }
 }
 
@@ -89,14 +130,38 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
+
+    @include mobile {
+        font-size: 16px;
+    }
+}
+
+.advantages__features-text-color1 {
+
+    @include mobile {
+        color: $general-blue;
+    }
+
+}
+
+.advantages__features-text-color2 {
+
+    @include mobile {
+        color: $general-red;
+    }
 }
 
 .advantages__sign-up {
     width: 340px;
-    height: 346px;
+    min-height: 360px;
     padding: 20px 30px 20px 30px;
     background: $background-general;
     border-radius: 20px;
+
+    @include mobile {
+        width: 250px;
+        padding: 15px;
+    }
 }
 
 .advantages__sign-up-title {
@@ -104,6 +169,12 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
+
+    @include mobile {
+        margin: 0 0 15px 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .advantages__sign-up-title-benefit {
@@ -114,6 +185,11 @@
     display: flex;
     justify-content: space-between;
     margin: 20px 0 20px 0;
+
+    @include mobile {
+        display: block;
+        margin: 10px 0 0 0;
+    }
 }
 
 .advantages__sign-up-form-button {
@@ -121,8 +197,22 @@
     border: $general-red;
     background: $general-red;
     color: $background-general;
+
+    @include mobile {
+        width: 251px;
+    }
 }
 
 .advantages__sign-up-form-button:hover {
     background: $general-blue;
+}
+
+.advantages__sign-up-form-agreement {
+    display: flex;
+    align-items: center;
+
+    /*@include mobile {
+        display: flex;
+        align-items: center;
+    }*/
 }

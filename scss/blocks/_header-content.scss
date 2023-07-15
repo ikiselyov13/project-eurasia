@@ -2,6 +2,10 @@
     min-height: 140px;
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+            min-height: 90px;
+        }
 }
 
 .header-content__picture-logo {
@@ -14,6 +18,11 @@
     @include tablet {
         width: 275px;
         height: 70px;
+    }
+
+    @include mobile {
+        width: 205px;
+        height: 50px;
     }
 }
 
@@ -166,6 +175,12 @@
         height: 48px;
         align-self: center;
         background: url(../img/header/icon-park-outline_hamburger-button.png);
+    }
+
+    @include mobile {
+        width: 36px;
+        height: 36px;
+        background-size: cover;
     }
 }
 

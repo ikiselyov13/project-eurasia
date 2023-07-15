@@ -24,7 +24,7 @@
 
 .catalog__item {
     width: 570px;
-    min-height: 380px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -32,10 +32,24 @@
     border-radius: 10px;
     margin: 0 0 50px 0;
     padding: 10px;
+
+    @include mobile {
+        width: 260px;
+        height: 520px;
+
+        /*display: grid;
+        grid-template-rows: 200px 320px;
+        grid-template-columns: 50% 50%;*/
+    }
 }
 
 .catalog__item-content {
     display: flex;
+    height: 285px;
+
+    @include mobile {
+        display: block;
+    }
 }
 
 .catalog__item-content-pic {

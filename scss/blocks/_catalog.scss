@@ -25,41 +25,55 @@
 .catalog__item {
     width: 570px;
     height: 380px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background: $background-general;
     border-radius: 10px;
     margin: 0 0 50px 0;
     padding: 10px;
 
+    display: grid;
+    grid-template-rows: auto 100px;
+    grid-template-columns: 220px auto;
+
     @include mobile {
         width: 260px;
-        height: 520px;
+        height: 470px;
+        margin: 0 0 10px 0;
+        border-radius: 5px;
 
-        /*display: grid;
-        grid-template-rows: 200px 320px;
-        grid-template-columns: 50% 50%;*/
+        display: grid;
+        grid-template-rows: 33% auto;
+        grid-template-columns: 50% 50%;
     }
 }
 
-.catalog__item-content {
+/*.catalog__item-content {
     display: flex;
     height: 285px;
 
     @include mobile {
         display: block;
     }
-}
+}*/
 
 .catalog__item-content-pic {
     width: 200px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    @include mobile {
+        width: 130px;
+    }
 }
 
 .catalog__item-content-pic-image {
     border-radius: 10px;
     width: 200px;
     height: 200px;
+
+    @include mobile {
+        width: 130px;
+        height: 130px;
+    }
 }
 
 .catalog__item-content-pic-price {
@@ -68,6 +82,10 @@
     line-height: 150%;
     text-align: center;
     margin: 15px 0 10px 0;
+
+    @include mobile {
+        margin: 5px 0 0 0;
+    }
 }
 
 .catalog__item-content-pic-details {
@@ -78,6 +96,10 @@
     line-height: 19px;
     text-decoration: none;
     color: $general-blue;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .catalog__item-content-pic-details:hover {
@@ -86,6 +108,14 @@
 
 .catalog__item-content-desc {
     margin: 0 0 0 20px;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+
+    @include mobile {
+        grid-row: 2/3;
+        grid-column: 1/3;
+        margin: 10px 0 0 0;
+    }
 }
 
 .catalog__item-content-desc-title {
@@ -93,6 +123,10 @@
     font-size: 22px;
     line-height: 27px;
     text-align: center;
+
+    @include mobile {
+        margin: 5px 0 0 0;
+    }
 }
 
 .catalog__item-content-desc-text {
@@ -104,14 +138,45 @@
 
 .catalog__item-control {
     display: flex;
+    align-items: center;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+
+    @include mobile {
+        display: grid;
+        grid-template-rows: 30% 30% auto;
+        /*grid-template-rows: repeat(3, 1fr);*/
+        grid-template-columns: 1fr;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        width: 120px;
+        margin: 0 10px 0 10px;
+    }
+}
+
+.catalog__item-control-meet {
     position: relative;
+
+    @include mobile {
+        grid-row: 1/2;
+    }
 }
 
 .catalog__item-control-btn {
     width: 175px;
     height: 60px;
     margin: 0 10px 0 0;
-    line-height: 19px
+    line-height: 19px;
+
+    @include mobile {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0;
+        margin: 0;
+        border-radius: 5px;
+    }
 }
 
 .catalog__item-control-btn_try {
@@ -139,6 +204,16 @@
     font-size: 16px;
     line-height: 19px;
     color: $general-blue;
+
+    @include mobile {
+        display: block;
+        width: 100px;
+        height: 40px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
 
 .catalog__item-control-link:hover {
@@ -156,8 +231,18 @@
     line-height: 17px;
     border-radius: 5px;
     position: absolute;
-    top: -17px;
-    left: 291px;
+    top: -19px;
+    left: 106px;
+
+    @include mobile {
+        width: 53px;
+        height: 15px;
+        border-radius: 3px;
+        font-size: 10px;
+        line-height: 8px;
+        top: -10px;
+        left: 72px;
+    }
 }
 
 .catalog__item-control-price-box-text {
@@ -173,4 +258,29 @@
     position: absolute;
     top: 23px;
     left: 69px;
+
+    @include mobile {
+        top: 14px;
+        left: 48px;
+        border: 2px solid transparent;
+        border-left: 2px solid green;
+        border-top: 2px solid green;
+    }
+}
+
+.catalog__pagination {
+    display: none;
+
+    @include mobile {
+        @include pagination-bar;
+        margin: 0;
+    }
+}
+
+.catalog__pagination-item {
+    @include pagination-item;
+}
+
+.catalog__pagination-item:hover {
+    @include pagination-item-hover;
 }

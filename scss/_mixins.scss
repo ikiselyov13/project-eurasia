@@ -71,3 +71,31 @@
     font-size: 18px;
     line-height: 22px;
 }
+
+@mixin pagination-bar {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin pagination-item {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $background-grey;
+    border: 1px solid $background-grey;
+    border-radius: 60px;
+    color: $background-general;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+@mixin pagination-item-hover {
+    background: $background-sky;
+    border: 1px solid $background-sky;
+    border-radius: 60px;
+}

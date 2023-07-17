@@ -11,6 +11,10 @@
         text-align: center;
         padding: 0 0 40px 0;
     }
+
+    @include mobile {
+        padding: 0 0 20px 0;
+    }
 }
 
 .application {
@@ -18,8 +22,8 @@
     margin: 0 0 75px 0;
     background: $background-blue;
 
-    @include tablet {
-        margin: 75px 0 75px 0;
+    @include mobile {
+        margin: 0 0 15px 0;
     }
 }
 
@@ -35,6 +39,19 @@
     font-size: 36px;
     line-height: 44px;
     text-align: center;
+
+    @include mobile {
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+
+.application__text {
+    @include mobile {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+    }
 }
 
 .application__btn {

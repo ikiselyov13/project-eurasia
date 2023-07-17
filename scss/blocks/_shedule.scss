@@ -2,15 +2,17 @@
 
 .shedule {
     display: block;
-
+    min-height: 400px;
+    padding: 100px 0 0 0;
+    
+    
     @include tablet {
         display: none;
     }
 }
 
 .container_shedule {
-    min-height: 400px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .shedule__title {

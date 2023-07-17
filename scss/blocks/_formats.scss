@@ -3,6 +3,10 @@
 .formats {
     min-height: 400px;
     margin: 100px 0 0 0;
+
+    @include mobile {
+        margin: 40px 0 0 0;
+    }
 }
 
 .formats__title {
@@ -10,6 +14,13 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
+
+    @include mobile {
+        margin: 0;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 .formats__list {
@@ -29,8 +40,13 @@
     border-radius: 10px;
 
     @include tablet {
-            margin: 30px auto;
-        }
+        margin: 30px auto;
+    }
+
+    @include mobile {
+        width: 240px;
+        padding: 10px;
+    }
 }
 
 .formats__item-title {
@@ -38,6 +54,10 @@
     font-weight: 700;
     font-size: 29px;
     line-height: 27px;
+
+    @include mobile {
+        font-size: 18px;
+    }
 }
 
 .formats__item-wrap {

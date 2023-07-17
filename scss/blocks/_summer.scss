@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include mobile {
+        background: url(../../img/summer/hey-girl-mobile.png);
+    }
 }
 
 .summer {
@@ -14,6 +18,10 @@
 
 .summer__wrap {
     margin: 0 0 0 70px;
+
+    @include mobile {
+        margin: 0 20px 0 20px;
+    }
 }
 
 .summer__title {
@@ -21,6 +29,12 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
+
+    @include mobile {
+        padding: 45px 0 20px 0;
+        font-size: 23px;
+        line-height: 30px;
+    }
 }
 
 .summer__title-internship {
@@ -46,6 +60,11 @@
     background: $background-general;
     border: 1px solid $background-general;
     color: $general-blue;
+
+    @include mobile {
+        margin: 20px auto;
+        display: block;
+    }
 }
 
 .summer__btn:hover {

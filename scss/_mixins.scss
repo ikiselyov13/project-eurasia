@@ -99,3 +99,8 @@
     border: 1px solid $background-sky;
     border-radius: 60px;
 }
+
+@mixin pos($top: 0px, $left: 0px) {
+    top: $top;
+    left: $left;
+}

@@ -162,13 +162,13 @@ body {
 @media (max-width: 768px) {
   .container {
     width: 720px;
-    background: aqua;
+    /*background: aqua;*/
   }
 }
 @media (max-width: 320px) {
   .container {
     width: 280px;
-    background: red;
+    /*background: red;*/
     margin: 0 10px;
   }
 }
@@ -182,6 +182,11 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #7C7C7C;
+  /*@include mobile {
+      font-size: 12px;
+      padding: 0;
+      border-radius: 5px;
+  }*/
 }
 
 button {
@@ -458,15 +463,20 @@ button {
     padding: 0 0 40px 0;
   }
 }
+@media (max-width: 320px) {
+  .container_application {
+    padding: 0 0 20px 0;
+  }
+}
 
 .application {
   min-height: 165px;
   margin: 0 0 75px 0;
   background: #DAECFF;
 }
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .application {
-    margin: 75px 0 75px 0;
+    margin: 0 0 15px 0;
   }
 }
 
@@ -482,6 +492,20 @@ button {
   font-size: 36px;
   line-height: 44px;
   text-align: center;
+}
+@media (max-width: 320px) {
+  .application__title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .application__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 .application__btn {
@@ -507,6 +531,14 @@ button {
   line-height: 44px;
   text-align: left;
   margin: 80px 0 40px 0;
+}
+@media (max-width: 320px) {
+  .catalog__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+  }
 }
 
 .catalog__list {
@@ -1036,12 +1068,25 @@ button {
   min-height: 400px;
   margin: 100px 0 0 0;
 }
+@media (max-width: 320px) {
+  .formats {
+    margin: 40px 0 0 0;
+  }
+}
 
 .formats__title {
   margin: 0 0 70px 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
+}
+@media (max-width: 320px) {
+  .formats__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .formats__list {
@@ -1066,12 +1111,23 @@ button {
     margin: 30px auto;
   }
 }
+@media (max-width: 320px) {
+  .formats__item {
+    width: 240px;
+    padding: 10px;
+  }
+}
 
 .formats__item-title {
   margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 29px;
   line-height: 27px;
+}
+@media (max-width: 320px) {
+  .formats__item-title {
+    font-size: 18px;
+  }
 }
 
 .formats__item-wrap {
@@ -1759,6 +1815,8 @@ button {
 /*Расписание и цены*/
 .shedule {
   display: block;
+  min-height: 400px;
+  padding: 100px 0 0 0;
 }
 @media (max-width: 768px) {
   .shedule {
@@ -1767,8 +1825,7 @@ button {
 }
 
 .container_shedule {
-  min-height: 400px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 .shedule__title {
@@ -2057,6 +2114,11 @@ button {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 320px) {
+  .container_summer {
+    background: url(../../img/summer/hey-girl-mobile.png);
+  }
+}
 
 .summer {
   min-height: 250px;
@@ -2065,12 +2127,24 @@ button {
 .summer__wrap {
   margin: 0 0 0 70px;
 }
+@media (max-width: 320px) {
+  .summer__wrap {
+    margin: 0 20px 0 20px;
+  }
+}
 
 .summer__title {
   padding: 25px 0 20px 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
+}
+@media (max-width: 320px) {
+  .summer__title {
+    padding: 45px 0 20px 0;
+    font-size: 23px;
+    line-height: 30px;
+  }
 }
 
 .summer__title-internship {
@@ -2096,6 +2170,12 @@ button {
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
   color: #0072DE;
+}
+@media (max-width: 320px) {
+  .summer__btn {
+    margin: 20px auto;
+    display: block;
+  }
 }
 
 .summer__btn:hover {
@@ -2285,11 +2365,28 @@ button {
   margin: 0 0 15px 0;
   padding: 10px 0 10px 20px;
 }
+@media (max-width: 320px) {
+  .input-box_trial {
+    width: 205px;
+    /*padding: 5px 0 5px 10px;*/
+  }
+}
 
 .trial {
-  min-height: 600px;
+  min-height: 565px;
   padding: 40px 0 0 0;
   background: #F6F9FC;
+}
+@media (max-width: 768px) {
+  .trial {
+    padding: 40px 0 45px 0;
+  }
+}
+@media (max-width: 320px) {
+  .trial {
+    min-height: 740px;
+    padding: 40px 0 20px 0;
+  }
 }
 
 .trial__title {
@@ -2300,9 +2397,40 @@ button {
   line-height: 44px;
   text-align: center;
 }
+@media (max-width: 320px) {
+  .trial__title {
+    width: 300px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .trial__title-headline {
+    display: block;
+  }
+}
 
 .trial__title-benefit {
   color: #F43131;
+}
+
+@media (max-width: 320px) {
+  .trial__picture-wrap {
+    width: 280px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .trial__picture {
+    padding: 0 0 0 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .trial__sign-up-form {
@@ -2324,12 +2452,23 @@ button {
     margin: 0 auto;
   }
 }
+@media (max-width: 320px) {
+  .trial__sign-up-form {
+    width: 235px;
+    padding: 20px;
+  }
+}
 
 .trial__sign-up-form-button {
   width: 295px;
   height: 55px;
   background: #0072DE;
   border: #0072DE;
+}
+@media (max-width: 320px) {
+  .trial__sign-up-form-button {
+    width: 225px;
+  }
 }
 
 .trial__sign-up-form-button:hover {
@@ -2350,25 +2489,56 @@ button {
   background: #FFFFFF;
   position: absolute;
 }
+@media (max-width: 320px) {
+  .trial__item {
+    height: 22px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+  }
+}
 
 .trial__item_1 {
   top: 140px;
   left: 70px;
+}
+@media (max-width: 320px) {
+  .trial__item_1 {
+    top: 125px;
+    left: 5px;
+  }
 }
 
 .trial__item_2 {
   top: 285px;
   left: 125px;
 }
+@media (max-width: 320px) {
+  .trial__item_2 {
+    top: 213px;
+    left: 45px;
+  }
+}
 
 .trial__item_3 {
   top: 462px;
   left: 99px;
 }
+@media (max-width: 320px) {
+  .trial__item_3 {
+    top: 275px;
+    left: 16px;
+  }
+}
 
 .trial__item_4 {
   top: 488px;
   left: 421px;
+}
+@media (max-width: 320px) {
+  .trial__item_4 {
+    top: 333px;
+    left: 80px;
+  }
 }
 
 .trial__item-box {
@@ -2384,6 +2554,13 @@ button {
   font-size: 18px;
   line-height: 22px;
 }
+@media (max-width: 320px) {
+  .trial__item-box {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+}
 
 .trial__item-box-number {
   display: inline-block;
@@ -2394,6 +2571,11 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
+}
+@media (max-width: 320px) {
+  .trial__item-content {
+    font-size: 14px;
+  }
 }
 
 .trial__item-content-text {

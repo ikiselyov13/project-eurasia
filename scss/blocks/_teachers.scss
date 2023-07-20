@@ -5,13 +5,26 @@
     margin: 100px 0 0 0;
 }
 
-.teachers__title {
+.teachers__heading {
     margin: 0 0 50px 0;
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+        margin: 0 0 25px 0;
+    }
+}
+
+.teachers__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
+
+    @include mobile {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 .teachers__title-control {
@@ -63,6 +76,11 @@
     @include tablet {
         flex-wrap: wrap;
     }
+
+    @include mobile {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
 }
 
 .teachers__item {
@@ -97,6 +115,10 @@
 .teachers__item-text {
     line-height: 150%;
     color: $text-secondary;
+
+    @include mobile {
+        width: 290px;
+    }
 }
 
 /*Кнопки tablet*/
@@ -118,6 +140,10 @@
     @include tablet {
         display: block;
     }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .teachers__content-control-button_right {
@@ -126,6 +152,10 @@
 
     @include tablet {
         display: block;
+    }
+
+    @include mobile {
+        display: none;
     }
 }
 

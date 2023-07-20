@@ -1,9 +1,12 @@
 /*Видео занятий*/
 
-.lessons__title {
+.lessons__heading {
     margin: 80px 0 50px 0;
     display: flex;
     justify-content: space-between;
+}
+
+.lessons__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
@@ -52,10 +55,6 @@
     }
 }
 
-/*.lessons__item {
-    
-}*/
-
 .lessons__item-box {
     width: 270px;
     min-height: 200px;
@@ -66,6 +65,5 @@
 
     @include tablet {
         margin: 0 30px 35px 0;
-        ;
     }
 }

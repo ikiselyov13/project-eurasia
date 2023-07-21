@@ -5,6 +5,12 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
+
+    @include mobile {
+        padding: 50px 0 25px 0;
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 .feedback__list {
@@ -25,6 +31,10 @@
 
     @include tablet {
         margin: 0 25px 30px 0;
+    }
+
+    @include mobile {
+        width: 235px;
     }
 }
 

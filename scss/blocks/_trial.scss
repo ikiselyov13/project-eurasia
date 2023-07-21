@@ -89,6 +89,7 @@
     padding: 25px;
     border-radius: 20px;
     background: $background-general;
+    @include shadow;
 
     @include tablet {
         position: static;
@@ -130,6 +131,7 @@
     padding: 13px 10px 13px 10px;
     background: $background-general;
     position: absolute;
+    @include shadow;
 
     @include mobile {
         height: 22px;

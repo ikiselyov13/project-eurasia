@@ -110,6 +110,7 @@
     position: absolute;
     top: 45px;
     left: 0px;
+    @include shadow;
 
 }
 
@@ -148,6 +149,7 @@
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
+    @include shadow;
 }
 
 .shedule__catalog-item-info-box {

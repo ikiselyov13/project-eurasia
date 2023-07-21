@@ -72,6 +72,7 @@
     top: 25px;
     border-radius: 10px;
     background: $background-general;
+    @include shadow;
 }
 
 .header-content__picture-drop-down:hover .header-content__picture-navbar {
@@ -202,6 +203,7 @@
     right: 0px;
     border-radius: 10px;
     background: $background-general;
+    @include shadow;
 }
 
 .header-content__burger:hover .header-content__burger-navbar {

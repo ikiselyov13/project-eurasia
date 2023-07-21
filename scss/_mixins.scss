@@ -104,3 +104,7 @@
     top: $top;
     left: $left;
 }
+
+@mixin shadow {
+    box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
+}

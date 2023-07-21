@@ -35,6 +35,7 @@
     padding: 20px;
     background: $background-general;
     border-radius: 10px;
+    @include shadow;
 
     @include tablet {
         margin: 30px auto;

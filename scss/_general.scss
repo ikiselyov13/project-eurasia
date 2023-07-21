@@ -46,12 +46,6 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: $text-secondary;
-
-    /*@include mobile {
-        font-size: 12px;
-        padding: 0;
-        border-radius: 5px;
-    }*/
 }
 
 button {
@@ -83,6 +77,6 @@ button {
     color: $general-red;
 }
 
-.shadow {
+/*.shadow {
     box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
-}
+}*/

@@ -182,11 +182,6 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #7C7C7C;
-  /*@include mobile {
-      font-size: 12px;
-      padding: 0;
-      border-radius: 5px;
-  }*/
 }
 
 button {
@@ -218,10 +213,9 @@ button {
   color: #F43131;
 }
 
-.shadow {
-  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
-}
-
+/*.shadow {
+    box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
+}*/
 /*Преимущества*/
 .input-box_advantages_name {
   margin: 0 auto;
@@ -559,6 +553,7 @@ button {
   border-radius: 10px;
   margin: 0 0 50px 0;
   padding: 10px;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
   display: grid;
   grid-template-rows: auto 100px;
   grid-template-columns: 220px auto;
@@ -947,6 +942,13 @@ button {
   font-size: 36px;
   line-height: 45px;
 }
+@media (max-width: 320px) {
+  .feedback__title {
+    padding: 50px 0 25px 0;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
 
 .feedback__list {
   display: flex;
@@ -968,6 +970,11 @@ button {
 @media (max-width: 768px) {
   .feedback__item {
     margin: 0 25px 30px 0;
+  }
+}
+@media (max-width: 320px) {
+  .feedback__item {
+    width: 235px;
   }
 }
 
@@ -1101,6 +1108,7 @@ button {
   padding: 20px;
   background: #FFFFFF;
   border-radius: 10px;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 @media (max-width: 768px) {
   .formats__item {
@@ -1463,6 +1471,7 @@ button {
   top: 25px;
   border-radius: 10px;
   background: #FFFFFF;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 
 .header-content__picture-drop-down:hover .header-content__picture-navbar {
@@ -1596,6 +1605,7 @@ button {
   right: 0px;
   border-radius: 10px;
   background: #FFFFFF;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 
 .header-content__burger:hover .header-content__burger-navbar {
@@ -1713,6 +1723,7 @@ button {
   padding: 20px;
   border-radius: 10px;
   background: #FFFFFF;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 @media (max-width: 768px) {
   .learning__item {
@@ -1786,11 +1797,22 @@ button {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 320px) {
+  .lessons__heading {
+    margin: 50px 0 25px 0;
+  }
+}
 
 .lessons__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
+}
+@media (max-width: 320px) {
+  .lessons__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .lessons__title-control {
@@ -1882,6 +1904,7 @@ button {
 }
 @media (max-width: 320px) {
   .result {
+    min-height: 650px;
     background: url(../../img/result/vector-mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -1899,9 +1922,9 @@ button {
 @media (max-width: 320px) {
   .result__title {
     width: 285px;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 30px 0;
     text-align: center;
-    font-size: 23px;
+    font-size: 24px;
     line-height: 29px;
   }
 }
@@ -1919,6 +1942,8 @@ button {
 @media (max-width: 320px) {
   .result__certificate {
     min-height: 400px;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -1932,10 +1957,12 @@ button {
   font-weight: 700;
   font-size: 20px;
   line-height: 35px;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 @media (max-width: 320px) {
   .result__subtitle {
     width: 280px;
+    height: 35px;
     margin: -10px 0 0 0;
     font-size: 17px;
   }
@@ -1943,6 +1970,18 @@ button {
 
 .result__list {
   position: absolute;
+}
+@media (max-width: 320px) {
+  .result__list {
+    position: static;
+    width: 280px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    /*background: yellow;*/
+    box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
+    margin: 0 0 -140px 0;
+    padding: 5px;
+  }
 }
 
 .result__item {
@@ -1952,6 +1991,16 @@ button {
   padding: 13px 10px 13px 10px;
   background: #FFFFFF;
   position: absolute;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
+}
+@media (max-width: 320px) {
+  .result__item {
+    position: static;
+    box-shadow: revert;
+    width: revert;
+    background: revert;
+    padding: 5px;
+  }
 }
 
 .result__item_1 {
@@ -1975,6 +2024,12 @@ button {
 @media (max-width: 768px) {
   .result__item_2 {
     left: -345px;
+  }
+}
+@media (max-width: 320px) {
+  .result__item_2 {
+    flex-direction: row;
+    width: 245px;
   }
 }
 
@@ -2011,6 +2066,11 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
+}
+@media (max-width: 320px) {
+  .result__item-content {
+    width: 220px;
+  }
 }
 
 .result__item-content-text {
@@ -2128,6 +2188,7 @@ button {
   position: absolute;
   top: 45px;
   left: 0px;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 
 .shedule__parameters-navbar-link {
@@ -2164,6 +2225,7 @@ button {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 
 .shedule__catalog-item-info-box {
@@ -2686,6 +2748,7 @@ button {
   padding: 25px;
   border-radius: 20px;
   background: #FFFFFF;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 @media (max-width: 768px) {
   .trial__sign-up-form {
@@ -2729,6 +2792,7 @@ button {
   padding: 13px 10px 13px 10px;
   background: #FFFFFF;
   position: absolute;
+  box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 @media (max-width: 320px) {
   .trial__item {

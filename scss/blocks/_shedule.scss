@@ -24,19 +24,22 @@
 .shedule__parameters {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 40px 0 10px 0;
 }
 
 .shedule__parameters-list {
     width: 625px;
+    margin: 15px 0 0 0;
     display: flex;
     justify-content: space-between;
 }
 
 .shedule__parameters-age {
+    width: 162px;
+    margin: 15px 0 0 0;
     border: 1px solid $text-secondary;
     border-radius: 5px;
-    width: 162px;
 }
 
 .shedule__parameters-age-button {
@@ -127,6 +130,7 @@
 
 .shedule__parameters-preferences-list {
     width: 400px;
+    margin: 15px 0 0 0;
     display: flex;
     flex-wrap: wrap;
 
@@ -140,11 +144,16 @@
 .shedule__catalog-list {
     display: flex;
     justify-content: space-between;
+
+    @include desctop-tablet-mid {
+        flex-wrap: wrap;
+    }
 }
 
 .shedule__catalog-item {
     width: 570px;
     height: 190px;
+    margin: 10px 0 20px 0;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -290,7 +299,7 @@
 .shedule__link {
     width: 200px;
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     color: $general-blue;
 }
 

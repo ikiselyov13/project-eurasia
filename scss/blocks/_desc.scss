@@ -20,6 +20,10 @@
     line-height: 150%;
     min-height: 350px;
 
+    @include desctop-tablet-mid {
+        width: 50%;
+    }
+
     @include tablet {
         width: 330px;
         min-height: 250px;
@@ -31,6 +35,11 @@
 }
 
 .desc__list {
+
+    @include desctop-tablet-max {
+        height: 330px;
+        overflow-y: scroll;
+    }
 
     @include tablet {
         width: 330px;
@@ -68,6 +77,11 @@
 }
 
 .desc__video {
+    margin: 0 0 0 30px;
+
+    @include desctop-tablet-mid {
+        width: 50%;
+    }
 
     @include mobile {
         margin: 0 auto;
@@ -79,6 +93,10 @@
     width: 500px;
     height: 330px;
     border-radius: 10px;
+
+    @include desctop-tablet-mid {
+        width: 100%;
+    }
 
     @include tablet {
         width: 360px;

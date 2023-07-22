@@ -24,6 +24,10 @@ body {
     width: 65%;
     margin: 0 auto;
     
+    @include desctop-tablet-max {
+        width: 80%;
+    }
+
     @include desctop-tablet-mid {
         width: 90%;
     }

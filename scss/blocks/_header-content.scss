@@ -82,8 +82,9 @@
     min-height: 100px;
     padding: 5px;
     display: none;
+    /*display: block;*/
     position: absolute;
-    top: 25px;
+    top: 15px;
     border-radius: 10px;
     background: $background-general;
     @include shadow;

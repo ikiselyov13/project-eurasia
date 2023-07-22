@@ -156,18 +156,26 @@ body {
 }
 
 .container {
-  width: 1248px;
+  /*width: 1248px;*/
+  width: 65%;
   margin: 0 auto;
+}
+@media (max-width: 1300px) {
+  .container {
+    width: 90%;
+  }
 }
 @media (max-width: 768px) {
   .container {
-    width: 720px;
+    /*width: 720px;*/
+    width: 93.75%;
     /*background: aqua;*/
   }
 }
 @media (max-width: 320px) {
   .container {
-    width: 280px;
+    /*width: 280px;*/
+    width: 87.5%;
     /*background: red;*/
     margin: 0 10px;
   }
@@ -213,9 +221,6 @@ button {
   color: #F43131;
 }
 
-/*.shadow {
-    box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
-}*/
 /*Преимущества*/
 .input-box_advantages_name {
   margin: 0 auto;
@@ -242,6 +247,7 @@ button {
   min-height: 450px;
   background: url(../../img/advantages/group-desctop.png);
   background-size: cover;
+  background-position: center;
 }
 @media (max-width: 768px) {
   .advantages {
@@ -267,15 +273,28 @@ button {
 
 .advantages__title {
   display: none;
+  /*@include tablet {
+      padding: 50px 0 50px 0;
+      display: block;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   .advantages__title {
     display: block;
-    padding: 50px 0 50px 0;
+    padding: 50px 0 0 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
     text-align: center;
+  }
+}
+@media (max-width: 1300px) {
+  .advantages__title {
+    padding: 50px 0 50px 0;
   }
 }
 @media (max-width: 320px) {
@@ -292,15 +311,25 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*@include tablet {
+      flex-direction: column-reverse;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .advantages__content {
     flex-direction: column-reverse;
   }
 }
 
 .advantages__features {
+  /*width: 850px;*/
+  width: 68.1%;
   min-height: 346px;
+}
+@media (max-width: 1600px) {
+  .advantages__features {
+    width: 100%;
+  }
 }
 
 .advantages__features-title {
@@ -308,8 +337,11 @@ button {
   font-size: 36px;
   line-height: 44px;
   text-align: center;
+  /*@include tablet {
+      display: none;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   .advantages__features-title {
     display: none;
   }
@@ -319,23 +351,42 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /*@include tablet {
+      flex-direction: row;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   .advantages__features-list {
     margin: 0 0 30px 0;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1300px) {
+  .advantages__features-list {
+    flex-direction: row;
   }
 }
 
 .advantages__features-item {
-  width: 362px;
-  margin: 60px 25px 0 25px;
+  /*width: 362px;*/
+  width: 42.6%;
+  /*margin: 60px 25px 0 25px;*/
+  margin: 60px 0 0 0;
   display: flex;
   align-items: center;
+  /*@include tablet {
+      width: 46.9%;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   .advantages__features-item {
-    width: 330px;
-    margin: 60px 0 0 0;
+    width: 90%;
+  }
+}
+@media (max-width: 1300px) {
+  .advantages__features-item {
+    /*width: 330px;*/
+    width: 46.9%;
   }
 }
 @media (max-width: 320px) {
@@ -437,10 +488,6 @@ button {
 .advantages__sign-up-form-agreement {
   display: flex;
   align-items: center;
-  /*@include mobile {
-      display: flex;
-      align-items: center;
-  }*/
 }
 
 /*Оставить заявку*/
@@ -1395,6 +1442,7 @@ button {
 
 .header-content {
   min-height: 140px;
+  margin: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -1404,12 +1452,27 @@ button {
   }
 }
 
+.header-content__picture {
+  width: 50%;
+}
+@media (max-width: 1600px) {
+  .header-content__picture {
+    flex-direction: column;
+  }
+}
+
 .header-content__picture-logo {
   width: 300px;
   height: 80px;
+  margin: 0 0 10px 0;
   background: url(../../img/header/logo-orig.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media (max-width: 1300px) {
+  .header-content__picture-logo {
+    width: 95%;
+  }
 }
 @media (max-width: 768px) {
   .header-content__picture-logo {
@@ -1490,7 +1553,8 @@ button {
 }
 
 .header-content__contacts {
-  width: 624px;
+  /*width: 624px;*/
+  width: 50%;
   padding: 20px 0 20px 0;
   display: flex;
   flex-direction: column;
@@ -1502,14 +1566,33 @@ button {
   }
 }
 
+.header-content__navigation {
+  width: 100%;
+  /*width: 500px;*/
+  display: flex;
+}
+
 .header-content__menu {
-  display: inline-block;
+  /*display: inline-block;*/
+  width: 96.15%;
+  margin: 0 20px 0 0;
 }
 
 .header-content__menu-list {
-  width: 600px;
+  /*width: 600px;*/
+  /*width: 96.15%;*/
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 1600px) {
+  .header-content__menu-list {
+    justify-content: flex-start;
+  }
+}
+
+.header-content__menu-item {
+  margin: 0 10px 0 10px;
 }
 
 .header-content__menu-link {
@@ -1539,6 +1622,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 1600px) {
+  .header-content__call {
+    min-height: 110px;
+    margin: 15px 0 0 0;
+    flex-direction: column;
+  }
 }
 
 .header-content__call-phone {
@@ -1626,6 +1716,12 @@ button {
 .header-nav__menu-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 1300px) {
+  .header-nav__menu-list {
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 768px) {
   .header-nav__menu-list {
@@ -1638,6 +1734,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 10px 0 10px;
 }
 
 .header-nav__menu-item:hover .header-nav__menu-line {

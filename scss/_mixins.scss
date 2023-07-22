@@ -1,3 +1,15 @@
+@mixin desctop-tablet-max {
+    @media (max-width: $desctop-tablet-max-width) {
+        @content;
+    }
+}
+
+@mixin desctop-tablet-mid {
+    @media (max-width: $desctop-tablet-mid-width) {
+            @content;
+        }
+}
+
 @mixin tablet {
     @media (max-width: $tablet-width) {
         @content;

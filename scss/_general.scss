@@ -20,18 +20,23 @@ body {
 }
 
 .container {
-    width: 1248px;
+    /*width: 1248px;*/
+    width: 65%;
     margin: 0 auto;
     
-    
+    @include desctop-tablet-mid {
+        width: 90%;
+    }
 
     @include tablet {
-        width: 720px;
+        /*width: 720px;*/
+        width: 93.75%;
         /*background: aqua;*/
     }
 
     @include mobile {
-        width: 280px;
+        /*width: 280px;*/
+        width: 87.5%;
         /*background: red;*/
         margin: 0 10px;
     }
@@ -76,7 +81,3 @@ button {
 .form-agreement-link:hover {
     color: $general-red;
 }
-
-/*.shadow {
-    box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
-}*/

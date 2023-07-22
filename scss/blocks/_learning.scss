@@ -33,8 +33,13 @@
     background: $background-general;
     @include shadow;
 
+    @include desctop-tablet-mid {
+        width: 44%;
+    }
+
     @include tablet {
-        width: 310px;
+        /*width: 310px;*/
+        width: 43%;
         margin: 0 0 20px 0;
         padding: 20px;
     }

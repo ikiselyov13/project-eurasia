@@ -24,9 +24,13 @@
 .lessons__title-control {
     @include control;
 
-    @include tablet {
+    @include desctop-tablet-mid {
         display: none;
     }
+
+    /*@include tablet {
+        display: none;
+    }*/
 }
 
 .lessons__title-control-button {
@@ -55,24 +59,44 @@
 }
 
 .lessons__list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 0 30px 0;
 
-    @include tablet {
+    @include desctop-tablet-mid {
+        width: revert;
         overflow-x: scroll;
+    }
+
+    /*@include tablet {
+        overflow-x: scroll;
+    }*/
+}
+
+.lessons__item {
+    width: 21.9%;
+
+    @include desctop-tablet-mid {
+        width: revert;
     }
 }
 
 .lessons__item-box {
-    width: 270px;
+    /*width: 270px;*/
+    width: 100%;
     min-height: 200px;
     margin: 0 0 40px 0;
     background: $background-deep-grey;
     border: 2px solid $background-deep-grey;
     border-radius: 15px;
 
-    @include tablet {
+    @include desctop-tablet-mid {
+        width: 270px;
         margin: 0 30px 35px 0;
     }
+
+    /*@include tablet {
+        
+    }*/
 }

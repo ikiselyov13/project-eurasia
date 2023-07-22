@@ -1050,24 +1050,33 @@ button {
 }
 
 .feedback__list {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  /*@include tablet {
+      overflow-x: scroll;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .feedback__list {
     overflow-x: scroll;
   }
 }
 
 .feedback__item {
-  width: 245px;
+  /*width: 245px;*/
+  width: 19.6%;
   height: 245px;
   padding: 20px;
   border: 2px solid #C0C0C0;
   border-radius: 15px;
+  /*@include tablet {
+      margin: 0 25px 30px 0;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .feedback__item {
+    width: 245px;
     margin: 0 25px 30px 0;
   }
 }
@@ -1140,8 +1149,11 @@ button {
   margin: 20px 0 0 0;
   display: flex;
   justify-content: center;
+  /*@include tablet {
+      display: none;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .feedback__pagination {
     display: none;
   }
@@ -1204,6 +1216,7 @@ button {
 .formats__item {
   width: 570px;
   min-height: 280px;
+  margin: 0 0 25px 0;
   padding: 20px;
   background: #FFFFFF;
   border-radius: 10px;
@@ -1875,9 +1888,15 @@ button {
   background: #FFFFFF;
   box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
+@media (max-width: 1300px) {
+  .learning__item {
+    width: 44%;
+  }
+}
 @media (max-width: 768px) {
   .learning__item {
-    width: 310px;
+    /*width: 310px;*/
+    width: 43%;
     margin: 0 0 20px 0;
     padding: 20px;
   }
@@ -1970,8 +1989,11 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 70px;
+  /*@include tablet {
+      display: none;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .lessons__title-control {
     display: none;
   }
@@ -2013,26 +2035,45 @@ button {
 }
 
 .lessons__list {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 0 30px 0;
+  /*@include tablet {
+      overflow-x: scroll;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .lessons__list {
+    width: revert;
     overflow-x: scroll;
   }
 }
 
+.lessons__item {
+  width: 21.9%;
+}
+@media (max-width: 1300px) {
+  .lessons__item {
+    width: revert;
+  }
+}
+
 .lessons__item-box {
-  width: 270px;
+  /*width: 270px;*/
+  width: 100%;
   min-height: 200px;
   margin: 0 0 40px 0;
   background: #696969;
   border: 2px solid #696969;
   border-radius: 15px;
+  /*@include tablet {
+
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .lessons__item-box {
+    width: 270px;
     margin: 0 30px 35px 0;
   }
 }
@@ -2156,8 +2197,11 @@ button {
 .result__item_1 {
   top: 60px;
   left: 65px;
+  /*@include tablet {
+      left: 100px;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .result__item_1 {
     left: 100px;
   }
@@ -2170,8 +2214,12 @@ button {
   justify-content: space-between;
   top: 235px;
   left: -370px;
+  /*@include tablet {
+      left: -345px;
+
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .result__item_2 {
     left: -345px;
   }
@@ -2186,8 +2234,11 @@ button {
 .result__item_3 {
   top: 315px;
   left: 80px;
+  /*@include tablet {
+      left: -5px;
+  }*/
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .result__item_3 {
     left: -5px;
   }
@@ -2614,7 +2665,7 @@ button {
 /*Преподаватели*/
 .teachers {
   min-height: 450px;
-  margin: 100px 0 0 0;
+  margin: 75px 0 0 0;
 }
 
 .teachers__heading {

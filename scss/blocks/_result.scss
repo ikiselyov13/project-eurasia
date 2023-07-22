@@ -113,9 +113,13 @@
     top: 60px;
     left: 65px;
 
-    @include tablet {
+    @include desctop-tablet-mid {
         left: 100px;
     }
+
+    /*@include tablet {
+        left: 100px;
+    }*/
 }
 
 .result__item_2 {
@@ -126,10 +130,14 @@
     top: 235px;
     left: -370px;
 
-    @include tablet {
+    @include desctop-tablet-mid {
+        left: -345px;
+    }
+
+    /*@include tablet {
         left: -345px;
         
-    }
+    }*/
 
     @include mobile {
         flex-direction: row;
@@ -141,9 +149,13 @@
     top: 315px;
     left: 80px;
 
-    @include tablet {
+    @include desctop-tablet-mid {
         left: -5px;
     }
+
+    /*@include tablet {
+        left: -5px;
+    }*/
 }
 
 .result__item-box {

@@ -11,13 +11,15 @@
 
 .header-content__picture {
     width: 50%;
+    display: flex;
+    align-items: center;
 
     @include desctop-tablet-max {
         flex-direction: column;
     }
 
     @include tablet {
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -40,14 +42,9 @@
     }
 
     @include mobile {
-        width: 205px;
-        height: 50px;
+        /*width: 205px;
+        height: 50px;*/
     }
-}
-
-.header-content__picture {
-    display: flex;
-    align-items: center;
 }
 
 .header-content__picture-drop-down {

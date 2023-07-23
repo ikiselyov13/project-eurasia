@@ -31,6 +31,7 @@
 
 .formats__item {
     width: 570px;
+    /*width: 45%;*/
     min-height: 280px;
     margin: 0 0 25px 0;
     padding: 20px;
@@ -64,7 +65,8 @@
 }
 
 .formats__item-wrap {
-    width: 570px;
+    /*width: 570px;*/
+    width: 100%;
     display: grid;
     grid-template-areas:
         "a b b b"
@@ -254,12 +256,30 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.formats__item-control-item {
+    width: 47.37%;
+
+    @include tablet {
+        width: 95%;
+    }
 }
 
 .formats__item-control-item-btn {
-    width: 270px;
+    /*width: 270px;*/
+    width: 100%;
     background: $general-blue;
     border: 1px solid $general-blue;
+
+    @include tablet {
+        padding: 0;
+        line-height: 20px;
+    }
 
     @include mobile {
         width: 235px;

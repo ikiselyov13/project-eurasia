@@ -773,6 +773,14 @@ button {
   margin: 0 10px 0 0;
   line-height: 19px;
 }
+@media (max-width: 768px) {
+  .catalog__item-control-btn {
+    width: 160px;
+    height: 50px;
+    line-height: 15px;
+    font-size: 16px;
+  }
+}
 @media (max-width: 320px) {
   .catalog__item-control-btn {
     width: 120px;
@@ -804,7 +812,7 @@ button {
 }
 
 .catalog__item-control-link {
-  width: 120px;
+  width: 100px;
   margin: 20px auto;
   text-align: center;
   text-decoration: none;
@@ -842,6 +850,11 @@ button {
   position: absolute;
   top: -19px;
   left: 106px;
+}
+@media (max-width: 768px) {
+  .catalog__item-control-price-box {
+    left: 90px;
+  }
 }
 @media (max-width: 320px) {
   .catalog__item-control-price-box {

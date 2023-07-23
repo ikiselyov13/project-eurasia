@@ -189,6 +189,13 @@
     margin: 0 10px 0 0;
     line-height: 19px;
 
+    @include tablet {
+        width: 160px;
+        height: 50px;
+        line-height: 15px;
+        font-size: 16px;
+    }
+
     @include mobile {
         width: 120px;
         height: 40px;
@@ -219,7 +226,7 @@
 }
 
 .catalog__item-control-link {
-    width: 120px;
+    width: 100px;
     margin: 20px auto;
     text-align: center;
     text-decoration: none;
@@ -256,6 +263,10 @@
     position: absolute;
     top: -19px;
     left: 106px;
+
+    @include tablet {
+        left: 90px;
+    }
 
     @include mobile {
         width: 53px;

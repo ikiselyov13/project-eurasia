@@ -6,12 +6,18 @@
 
 @mixin desctop-tablet-mid {
     @media (max-width: $desctop-tablet-mid-width) {
-            @content;
-        }
+        @content;
+    }
 }
 
 @mixin tablet {
     @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin tablet-mobile-mid-width {
+    @media (max-width: $tablet-mobile-mid-width) {
         @content;
     }
 }

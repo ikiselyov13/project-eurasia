@@ -2481,7 +2481,9 @@ button {
 }
 @media (max-width: 1300px) {
   .shedule__catalog-list {
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -2931,6 +2933,18 @@ button {
 .container_trial {
   position: relative;
 }
+@media (max-width: 1300px) {
+  .container_trial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .container_trial {
+    display: block;
+  }
+}
 
 .input-box_trial {
   width: 275px;
@@ -2968,6 +2982,11 @@ button {
   font-size: 36px;
   line-height: 44px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .trial__title {
+    width: 100%;
+  }
 }
 @media (max-width: 320px) {
   .trial__title {
@@ -3018,10 +3037,6 @@ button {
   border-radius: 20px;
   background: #FFFFFF;
   box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
-  /*@include tablet {
-      position: static;
-      margin: 0 auto;
-  }*/
 }
 @media (max-width: 1300px) {
   .trial__sign-up-form {
@@ -3053,11 +3068,10 @@ button {
   border: #F43131;
 }
 
-.trial__list {
-  position: absolute;
-  top: 0px;
-}
-
+/*.trial__list {
+    position: absolute;
+    top: 0px;
+}*/
 .trial__item {
   display: flex;
   width: max-content;

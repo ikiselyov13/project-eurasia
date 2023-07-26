@@ -72,6 +72,9 @@
 }
 
 .trial__picture-wrap {
+    width: 715px;
+    height: 475px;
+    background: url(../../img/trial/blue-copybooks.png);
 
     @include mobile {
         width: 280px;

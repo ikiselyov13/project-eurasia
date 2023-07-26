@@ -555,6 +555,11 @@ button {
   }
 }
 
+@media (max-width: 500px) {
+  .application__text {
+    margin: 20px 0 20px 0;
+  }
+}
 @media (max-width: 320px) {
   .application__text {
     font-weight: 500;
@@ -2665,9 +2670,19 @@ button {
 .summer__wrap {
   margin: 0 0 0 70px;
 }
+@media (max-width: 500px) {
+  .summer__wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 320px) {
   .summer__wrap {
-    margin: 0 20px 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin: 0 20px 0 20px;*/
   }
 }
 
@@ -2709,10 +2724,16 @@ button {
   border: 1px solid #FFFFFF;
   color: #0072DE;
 }
+@media (max-width: 500px) {
+  .summer__btn {
+    margin: 10px 0 20px 0;
+  }
+}
 @media (max-width: 320px) {
   .summer__btn {
-    margin: 20px auto;
-    display: block;
+    width: 85%;
+    /*margin: 20px auto;
+    display: block;*/
   }
 }
 

@@ -47,6 +47,11 @@
 }
 
 .application__text {
+
+    @include tablet-mobile-mid-width {
+        margin: 20px 0 20px 0;
+    }
+
     @include mobile {
         font-weight: 500;
         font-size: 15px;
@@ -59,7 +64,6 @@
     height: 50px;
     background: $general-blue;
     border: 1px solid $general-blue;
-
 }
 
 .application__btn:hover {

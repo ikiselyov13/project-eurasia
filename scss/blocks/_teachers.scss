@@ -86,6 +86,14 @@
 .teachers__item {
     width: 300px;
     margin: 0 0 50px 0;
+
+    @include tablet {
+        width: 40%;
+    }
+
+    @include tablet-mobile-mid-width {
+        width: 100%;
+    }
 }
 
 .teachers__item-photo {

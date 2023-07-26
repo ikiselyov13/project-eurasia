@@ -2895,6 +2895,16 @@ button {
   width: 300px;
   margin: 0 0 50px 0;
 }
+@media (max-width: 768px) {
+  .teachers__item {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .teachers__item {
+    width: 100%;
+  }
+}
 
 .teachers__item-photo {
   width: 180px;

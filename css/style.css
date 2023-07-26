@@ -2945,16 +2945,27 @@ button {
     display: block;
   }
 }
+@media (max-width: 500px) {
+  .container_trial {
+    display: flex;
+  }
+}
 
 .input-box_trial {
   width: 275px;
   margin: 0 0 15px 0;
   padding: 10px 0 10px 20px;
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+  .input-box_trial {
+    width: 260px;
+    margin: 0 15px 15px 0;
+  }
+}
+@media (max-width: 500px) {
   .input-box_trial {
     width: 205px;
-    /*padding: 5px 0 5px 10px;*/
+    margin: 0 0 15px 0;
   }
 }
 
@@ -3013,10 +3024,26 @@ button {
   height: 475px;
   background: url(../../img/trial/blue-copybooks.png);
 }
+@media (max-width: 768px) {
+  .trial__picture-wrap {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (max-width: 500px) {
+  .trial__picture-wrap {
+    width: 90%;
+    height: 100%;
+  }
+}
 @media (max-width: 320px) {
   .trial__picture-wrap {
+    /*width: 280px;
+    height: 300px;*/
     width: 280px;
-    height: 300px;
+    height: 290px;
   }
 }
 
@@ -3026,6 +3053,13 @@ button {
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .trial__sign-up {
+    width: 95%;
+    align-self: center;
   }
 }
 
@@ -3046,7 +3080,17 @@ button {
 @media (max-width: 1300px) {
   .trial__sign-up-form {
     position: static;
-    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .trial__sign-up-form {
+    width: 94%;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .trial__sign-up-form {
+    width: 90%;
   }
 }
 @media (max-width: 320px) {
@@ -3062,7 +3106,13 @@ button {
   background: #0072DE;
   border: #0072DE;
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+  .trial__sign-up-form-button {
+    width: 280px;
+    margin: 0 15px 0 0;
+  }
+}
+@media (max-width: 500px) {
   .trial__sign-up-form-button {
     width: 225px;
   }
@@ -3073,10 +3123,16 @@ button {
   border: #F43131;
 }
 
-/*.trial__list {
-    position: absolute;
-    top: 0px;
-}*/
+@media (max-width: 768px) {
+  .trial__list {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+
 .trial__item {
   display: flex;
   width: max-content;
@@ -3086,7 +3142,12 @@ button {
   position: absolute;
   box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+  .trial__item {
+    position: static;
+  }
+}
+@media (max-width: 500px) {
   .trial__item {
     height: 22px;
     padding: 5px 5px 5px 5px;
@@ -3097,6 +3158,12 @@ button {
 .trial__item_1 {
   top: 140px;
   left: 70px;
+}
+@media (max-width: 768px) {
+  .trial__item_1 {
+    grid-row: 2/3;
+    grid-column: 2/10;
+  }
 }
 @media (max-width: 320px) {
   .trial__item_1 {
@@ -3109,16 +3176,28 @@ button {
   top: 285px;
   left: 125px;
 }
+@media (max-width: 768px) {
+  .trial__item_2 {
+    grid-row: 5/6;
+    grid-column: 3/10;
+  }
+}
 @media (max-width: 320px) {
   .trial__item_2 {
     top: 213px;
-    left: 45px;
+    left: 30px;
   }
 }
 
 .trial__item_3 {
   top: 462px;
   left: 99px;
+}
+@media (max-width: 768px) {
+  .trial__item_3 {
+    grid-row: 7/8;
+    grid-column: 2/10;
+  }
 }
 @media (max-width: 320px) {
   .trial__item_3 {
@@ -3131,10 +3210,21 @@ button {
   top: 488px;
   left: 421px;
 }
+@media (max-width: 768px) {
+  .trial__item_4 {
+    grid-row: 9/10;
+    grid-column: 6/10;
+  }
+}
+@media (max-width: 500px) {
+  .trial__item_4 {
+    grid-column: 3/4;
+  }
+}
 @media (max-width: 320px) {
   .trial__item_4 {
     top: 333px;
-    left: 80px;
+    left: 65px;
   }
 }
 
@@ -3151,7 +3241,7 @@ button {
   font-size: 18px;
   line-height: 22px;
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .trial__item-box {
     width: 20px;
     height: 20px;
@@ -3169,7 +3259,7 @@ button {
   font-size: 16px;
   line-height: 150%;
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .trial__item-content {
     font-size: 14px;
   }

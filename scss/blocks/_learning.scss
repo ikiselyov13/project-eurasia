@@ -22,12 +22,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include desctop-tablet-max {
+        justify-content: space-evenly;
+    }
 }
 
 .learning__item {
     width: 350px;
     min-height: 160px;
-    margin: 0 0 40px 0;
+    /*margin: 0 0 40px 0;*/
+    margin: 0 20px 40px 0;
     padding: 20px;
     border-radius: 10px;
     background: $background-general;
@@ -35,12 +40,20 @@
 
     @include desctop-tablet-mid {
         width: 44%;
+        
     }
 
     @include tablet {
-        width: 310px;
+        /*width: 310px;*/
+        width: 40%;
+        /*margin: 0 20px 20px 0;*/
         margin: 0 0 20px 0;
         padding: 20px;
+    }
+
+    @include tablet-mobile-mid-width {
+        width: 80%;
+        margin: 0 10px 20px 0;
     }
 
     @include mobile {
@@ -51,10 +64,17 @@
 .learning__item-features {
     min-height: 80px;
     display: flex;
+    /*align-items: flex-start;*/
 }
 
 .learning__item-features-icon {
     margin: 0 25px 0 0;
+    object-fit: contain;
+
+    @include tablet {
+        width: 30%;
+        margin: 0 10px 0 0;
+    }
 
     @include mobile {
         width: 70px;

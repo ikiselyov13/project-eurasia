@@ -31,7 +31,6 @@
 .learning__item {
     width: 350px;
     min-height: 160px;
-    /*margin: 0 0 40px 0;*/
     margin: 0 20px 40px 0;
     padding: 20px;
     border-radius: 10px;
@@ -46,7 +45,6 @@
     @include tablet {
         /*width: 310px;*/
         width: 40%;
-        /*margin: 0 20px 20px 0;*/
         margin: 0 0 20px 0;
         padding: 20px;
     }
@@ -64,7 +62,6 @@
 .learning__item-features {
     min-height: 80px;
     display: flex;
-    /*align-items: flex-start;*/
 }
 
 .learning__item-features-icon {

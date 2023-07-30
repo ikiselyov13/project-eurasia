@@ -1996,7 +1996,6 @@ button {
 .learning__item {
   width: 350px;
   min-height: 160px;
-  /*margin: 0 0 40px 0;*/
   margin: 0 20px 40px 0;
   padding: 20px;
   border-radius: 10px;
@@ -2012,7 +2011,6 @@ button {
   .learning__item {
     /*width: 310px;*/
     width: 40%;
-    /*margin: 0 20px 20px 0;*/
     margin: 0 0 20px 0;
     padding: 20px;
   }
@@ -2032,7 +2030,6 @@ button {
 .learning__item-features {
   min-height: 80px;
   display: flex;
-  /*align-items: flex-start;*/
 }
 
 .learning__item-features-icon {
@@ -2254,7 +2251,9 @@ button {
   min-height: 495px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
+  flex-direction: column;
+  align-items: center;
   background: url(../img/result/sertificate.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2290,7 +2289,22 @@ button {
 }
 
 .result__list {
-  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*position: absolute;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);*/
+}
+@media (max-width: 768px) {
+  .result__list {
+    width: 90%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+  }
 }
 @media (max-width: 320px) {
   .result__list {
@@ -2311,7 +2325,7 @@ button {
   border-radius: 10px;
   padding: 13px 10px 13px 10px;
   background: #FFFFFF;
-  position: absolute;
+  /*position: absolute;*/
   box-shadow: 4px 4px 15px 0px rgba(34, 60, 80, 0.5);
 }
 @media (max-width: 320px) {
@@ -2344,14 +2358,16 @@ button {
   justify-content: space-between;
   top: 235px;
   left: -370px;
-  /*@include tablet {
-      left: -345px;
-
-  }*/
 }
 @media (max-width: 1300px) {
   .result__item_2 {
     left: -345px;
+  }
+}
+@media (max-width: 768px) {
+  .result__item_2 {
+    /*left: -345px;*/
+    align-self: flex-end;
   }
 }
 @media (max-width: 320px) {

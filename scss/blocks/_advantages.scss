@@ -21,17 +21,18 @@
 .advantages {
     width: 100%;
     min-height: 450px;
-    background: url(../../img/advantages/group-desctop.png);
+    background: url(../img/advantages/group-desctop.png);
+    /*background: url(../../img/advantages/group-desctop.png);*/
     background-size: cover;
     background-position: center;
 
     @include tablet {
-        background: url(../../img/advantages/group-tablet.png);
+        background: url(../img/advantages/group-tablet.png);
         background-size: cover;
     }
 
     @include mobile {
-        background: url(../../img/advantages/group-mobile.png);
+        background: url(../img/advantages/group-mobile.png);
         background-size: cover;
     }
 }
@@ -60,15 +61,6 @@
         padding: 50px 0 50px 0;
     }
 
-    /*@include tablet {
-        padding: 50px 0 50px 0;
-        display: block;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 44px;
-        text-align: center;
-    }*/
-
     @include mobile {
         padding: 20px 0 20px 0;
         font-weight: 700;
@@ -87,9 +79,6 @@
         flex-direction: column-reverse;
     }
 
-    /*@include tablet {
-        flex-direction: column-reverse;
-    }*/
 }
 
 .advantages__features {
@@ -111,10 +100,6 @@
     @include desctop-tablet-max {
         display: none;
     }
-
-    /*@include tablet {
-        display: none;
-    }*/
 }
 
 .advantages__features-list {
@@ -131,10 +116,6 @@
         flex-direction: row;
     }
 
-    /*@include tablet {
-        flex-direction: row;
-    }*/
-
     @include tablet-mobile-mid-width {
         justify-content: center;
     }
@@ -143,7 +124,6 @@
 .advantages__features-item {
     /*width: 362px;*/
     width: 42.6%;
-    /*margin: 60px 25px 0 25px;*/
     margin: 60px 0 0 0;
     display: flex;
     align-items: center;
@@ -157,19 +137,10 @@
         width: 46.9%;
     }
 
-    /*@include tablet {
-        width: 46.9%;
-    }*/
-
     @include tablet-mobile-mid-width {
         width: 280px;
         margin: 25px 0 0 0;
     }
-
-    /* @include mobile {
-        width: 280px;
-        margin: 25px 0 0 0;
-    }*/
 }
 
 .advantages__features-icon {
@@ -193,7 +164,6 @@
     @include mobile {
         color: $general-blue;
     }
-
 }
 
 .advantages__features-text-color2 {

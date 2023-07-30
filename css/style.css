@@ -250,19 +250,20 @@ button {
 .advantages {
   width: 100%;
   min-height: 450px;
-  background: url(../../img/advantages/group-desctop.png);
+  background: url(../img/advantages/group-desctop.png);
+  /*background: url(../../img/advantages/group-desctop.png);*/
   background-size: cover;
   background-position: center;
 }
 @media (max-width: 768px) {
   .advantages {
-    background: url(../../img/advantages/group-tablet.png);
+    background: url(../img/advantages/group-tablet.png);
     background-size: cover;
   }
 }
 @media (max-width: 320px) {
   .advantages {
-    background: url(../../img/advantages/group-mobile.png);
+    background: url(../img/advantages/group-mobile.png);
     background-size: cover;
   }
 }
@@ -278,14 +279,6 @@ button {
 
 .advantages__title {
   display: none;
-  /*@include tablet {
-      padding: 50px 0 50px 0;
-      display: block;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 44px;
-      text-align: center;
-  }*/
 }
 @media (max-width: 1600px) {
   .advantages__title {
@@ -316,9 +309,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*@include tablet {
-      flex-direction: column-reverse;
-  }*/
 }
 @media (max-width: 1300px) {
   .advantages__content {
@@ -342,9 +332,6 @@ button {
   font-size: 36px;
   line-height: 44px;
   text-align: center;
-  /*@include tablet {
-      display: none;
-  }*/
 }
 @media (max-width: 1600px) {
   .advantages__features-title {
@@ -356,9 +343,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /*@include tablet {
-      flex-direction: row;
-  }*/
 }
 @media (max-width: 1600px) {
   .advantages__features-list {
@@ -380,17 +364,9 @@ button {
 .advantages__features-item {
   /*width: 362px;*/
   width: 42.6%;
-  /*margin: 60px 25px 0 25px;*/
   margin: 60px 0 0 0;
   display: flex;
   align-items: center;
-  /*@include tablet {
-      width: 46.9%;
-  }*/
-  /* @include mobile {
-      width: 280px;
-      margin: 25px 0 0 0;
-  }*/
 }
 @media (max-width: 1600px) {
   .advantages__features-item {
@@ -1642,7 +1618,7 @@ button {
   width: 300px;
   height: 80px;
   margin: 0 0 10px 0;
-  background: url(../../img/header/logo-orig.png);
+  background: url(../img/header/logo-orig.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2793,7 +2769,7 @@ button {
 }
 @media (max-width: 320px) {
   .container_summer {
-    background: url(../../img/summer/hey-girl-mobile.png);
+    background: url(../img/summer/hey-girl-mobile.png);
   }
 }
 
@@ -3187,7 +3163,7 @@ button {
 .trial__picture-wrap {
   width: 715px;
   height: 475px;
-  background: url(../../img/trial/blue-copybooks.png);
+  background: url(../img/trial/blue-copybooks.png);
 }
 @media (max-width: 768px) {
   .trial__picture-wrap {
